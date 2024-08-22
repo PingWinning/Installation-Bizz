@@ -1,3 +1,7 @@
+![image](https://github.com/user-attachments/assets/3ef0fd33-d144-4ce5-a35b-0eaf554f95d8)
+![image](https://github.com/user-attachments/assets/9f2839f5-5c21-4c2f-b3e8-30d803e83d0e)
+![image](https://github.com/user-attachments/assets/44d3cb6a-bda2-478f-b7dd-6557c383f162)
+
 # Professional Installation Services - User Panel
 
 This repository contains the user panel for our Professional Installation Services business, offering a seamless interface for customers to explore and request our services. Our business is dedicated to providing top-notch installation services across Laval and Montreal, ensuring that all your equipment is set up with care and precision.
@@ -20,6 +24,8 @@ This repository contains the user panel for our Professional Installation Servic
 - **Moving Services:** Professional moving services are available across Laval and Montreal, with additional options for long-distance moves.
 
 ## Admin Panel Overview
+
+![image](https://github.com/user-attachments/assets/68539511-5516-4bef-85fc-38acf57c2274)
 
 The admin panel allows administrators to manage user requests effectively. Key features include:
 
