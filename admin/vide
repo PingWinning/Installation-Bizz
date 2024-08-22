@@ -1,0 +1,22 @@
+const usersData = [
+            { name: "John Doe", phone: "+1 514-555-0123", email: "john.doe@example.com", request: "Need assistance with my account settings.", status: "pending", date: "2024-08-10" },
+            { name: "Jane Smith", phone: "+1 438-555-0456", email: "jane.smith@example.com", request: "Issue with payment processing.", status: "pending", date: "2024-08-09" },
+            { name: "David Lee", phone: "+1 450-555-0789", email: "david.lee@example.com", request: "Requesting a refund for my last purchase.", status: "pending", date: "2024-08-08" },
+            { name: "Emily Johnson", phone: "+1 514-555-0912", email: "emily.johnson@example.com", request: "How do I change my password?", status: "pending", date: "2024-08-07" },
+            { name: "Michael Brown", phone: "+1 450-555-0234", email: "michael.brown@example.com", request: "Unable to access my account.", status: "pending", date: "2024-08-06" },
+            { name: "Sarah Davis", phone: "+1 514-555-0567", email: "sarah.davis@example.com", request: "Error in billing.", status: "pending", date: "2024-08-05" },
+            { name: "James Wilson", phone: "+1 438-555-0890", email: "james.wilson@example.com", request: "I need help with subscription.", status: "pending", date: "2024-08-04" },
+            { name: "Patricia Miller", phone: "+1 450-555-0123", email: "patricia.miller@example.com", request: "How to change my email address?", status: "pending", date: "2024-08-03" },
+            { name: "Robert Martinez", phone: "+1 514-555-0456", email: "robert.martinez@example.com", request: "Request for a feature update.", status: "pending", date: "2024-08-02" },
+            { name: "Linda Hernandez", phone: "+1 438-555-0789", email: "linda.hernandez@example.com", request: "Account suspension issue.", status: "pending", date: "2024-08-01" },
+            { name: "Charles Clark", phone: "+1 450-555-0912", email: "charles.clark@example.com", request: "Refund not received.", status: "pending", date: "2024-07-31" },
+            { name: "Mary Lewis", phone: "+1 514-555-0145", email: "mary.lewis@example.com", request: "Problem with two-factor authentication.", status: "pending", date: "2024-07-30" },
+            { name: "Christopher Lee", phone: "+1 438-555-0678", email: "christopher.lee@example.com", request: "Account login issues.", status: "pending", date: "2024-07-29" },
+            { name: "Barbara Walker", phone: "+1 450-555-0890", email: "barbara.walker@example.com", request: "Need help with password recovery.", status: "pending", date: "2024-07-28" },
+            { name: "Thomas Hall", phone: "+1 514-555-0234", email: "thomas.hall@example.com", request: "Subscription plan question.", status: "pending", date: "2024-07-27" },
+            { name: "Susan Young", phone: "+1 438-555-0567", email: "susan.young@example.com", request: "Need to update my payment method.", status: "pending", date: "2024-07-26" },
+            { name: "Daniel King", phone: "+1 450-555-0456", email: "daniel.king@example.com", request: "Issue with account verification.", status: "pending", date: "2024-07-25" },
+            { name: "Karen Harris", phone: "+1 514-555-0789", email: "karen.harris@example.com", request: "Cannot find my purchase history.", status: "pending", date: "2024-07-24" },
+            { name: "Matthew Moore", phone: "+1 438-555-0912", email: "matthew.moore@example.com", request: "How do I delete my account?", status: "pending", date: "2024-07-23" },
+            { name: "Nancy White", phone: "+1 450-555-0123", email: "nancy.white@example.com", request: "Question about pricing.", status: "pending", date: "2024-07-22" }
+        ];
