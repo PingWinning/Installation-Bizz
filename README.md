@@ -103,8 +103,7 @@ For now, I'm focused on creating a working business while I continue my computer
 Looking forward to collaborating with you all!
 
 paypal.me : https://paypal.me/DimitarSimeonov17?country.x=CA&locale.x=en_US
-#
-![Untitled](https://github.com/user-attachments/assets/1ec54497-013f-4b57-8ce4-f334ea1e9bc2)
+
 #
 
 ![goof](https://github.com/user-attachments/assets/b97c0eff-9ca0-4925-a577-9a1598df96bd)
