@@ -67,3 +67,13 @@ The SQL back-end is built using MariaDB and manages two primary tables:
 ## How to Contribute
 
 We welcome contributions to improve the user panel. Whether it’s enhancing the UI, optimizing the backend, or adding new features, your input is valuable. Please submit a pull request or open an issue to start contributing.
+
+## Author's Message to Contributors
+
+Hey everyone,
+
+I know this is a really basic webpage right now, but I'm passionate about turning it into a fully functional business. While there may be some security issues at this stage, I'm committed to fixing them and I'm actively looking for a positive team of contributors who can help build a secure and professional website. The goal is to manage user requests and, in the future, potentially handle transactions and employee management.
+
+For now, I'm focused on creating a working business while I continue my computer science studies. This project is also a way for me to earn some money to help cover my expenses, like gas.
+
+Looking forward to collaborating with you all!
