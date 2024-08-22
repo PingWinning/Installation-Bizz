@@ -19,14 +19,50 @@ This repository contains the user panel for our Professional Installation Servic
 - **Box Removal & Recycling:** We take care of the tedious task of unpacking and recycling, leaving your space clean and organized.
 - **Moving Services:** Professional moving services are available across Laval and Montreal, with additional options for long-distance moves.
 
+## SQL Back-end Overview
+
+### Database Structure
+
+The SQL back-end is built using MariaDB and manages two primary tables:
+
+1. **`tickets`** - This table stores user requests with the following structure:
+    - `id`: Auto-incremented unique identifier for each request.
+    - `name`: Name of the user.
+    - `phone`: User's phone number.
+    - `email`: User's email address.
+    - `request`: The message or service request made by the user.
+    - `status`: The current status of the request (`pending`, `in-progress`, `completed`).
+    - `submission_date`: The date when the request was submitted.
+
+2. **`users`** - This table stores user credentials, specifically for admin access:
+    - `id`: Auto-incremented unique identifier for each user.
+    - `username`: The username for the user (default admin is `Boss007`).
+    - `password_hash`: The hashed password for secure authentication (default password is `pass`).
+
+### How to Use the Database
+
+1. **Setting Up the Database:**
+   - Import the provided SQL dump into your MariaDB or MySQL instance to create the necessary tables and initial data.
+   - Ensure that the `tickets` table is configured to auto-increment the `id` field to prevent conflicts when inserting new records.
+
+2. **Admin Access:**
+   - The default admin username is `Boss007`, and the password is `pass`.
+   - The password is stored as a hashed value in the `users` table, ensuring security. For hashing passwords, ensure your PHP environment uses a secure hashing algorithm (e.g., `password_hash()` function).
+
+3. **Storing User Information:**
+   - User requests submitted through the contact form on the front-end are stored in the `tickets` table.
+   - The admin can view and manage these requests, updating the status as needed.
+
+### Notes for Contributors
+
+- **Security:** Contributions should prioritize security, especially when handling user data and authentication processes.
+- **Database Migrations:** If you make changes to the database schema, please include migration scripts and update the SQL dump accordingly.
+
 ## Technologies Used
 
 - **PHP & MySQL:** For backend processing and database management.
 - **HTML, CSS, TailwindCSS:** For creating a clean, modern, and responsive user interface.
 - **JavaScript:** Enhancing user interaction and handling form submissions.
-
-
-
 
 ## How to Contribute
 
