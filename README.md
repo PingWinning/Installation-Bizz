@@ -101,3 +101,5 @@ I know this is a really basic webpage right now, but I'm passionate about turnin
 For now, I'm focused on creating a working business while I continue my computer science studies. This project is also a way for me to earn some money to help cover my expenses, like gas.
 
 Looking forward to collaborating with you all!
+
+![paypal-gif](https://github.com/user-attachments/assets/f4ff5db3-f123-45b7-8f71-fbfd199f316b)
