@@ -19,6 +19,30 @@ This repository contains the user panel for our Professional Installation Servic
 - **Box Removal & Recycling:** We take care of the tedious task of unpacking and recycling, leaving your space clean and organized.
 - **Moving Services:** Professional moving services are available across Laval and Montreal, with additional options for long-distance moves.
 
+## Admin Panel Overview
+
+The admin panel allows administrators to manage user requests effectively. Key features include:
+
+- **User Authentication:** Secure login for administrators with the default username `Boss007` and password `pass`.
+- **Ticket Management:** View, filter, and update the status of user-submitted tickets.
+  - **Filters:** Administrators can filter tickets by status (`pending`, `in-progress`, `completed`) and submission date.
+  - **Pagination:** The admin panel supports pagination to manage large numbers of tickets, with options to show 5, 10, or 20 tickets per page.
+- **Status Updates:** Administrators can update the status of user requests directly from the admin panel, helping keep track of progress.
+- **Request Details:** For longer user requests, a "See More" button reveals the full content without cluttering the interface.
+- **Deletion of Tickets:** Administrators can delete tickets if necessary, helping maintain a clean and organized database.
+
+### How to Use the Admin Panel
+
+1. **Login:**
+   - Navigate to the login page and use the default credentials (`Boss007` / `pass`) to access the admin dashboard.
+   - Upon successful login, administrators are redirected to the user tickets management page.
+
+2. **Managing Tickets:**
+   - Use the filters and pagination controls to navigate through the tickets.
+   - Update the status of a ticket by selecting the appropriate status from the dropdown menu.
+   - View full request details by clicking the "See More" button, which opens a modal with the complete message.
+   - To delete a ticket, click the "Delete" button next to the ticket.
+
 ## SQL Back-end Overview
 
 ### Database Structure
@@ -66,7 +90,7 @@ The SQL back-end is built using MariaDB and manages two primary tables:
 
 ## How to Contribute
 
-We welcome contributions to improve the user panel. Whether it’s enhancing the UI, optimizing the backend, or adding new features, your input is valuable. Please submit a pull request or open an issue to start contributing.
+We welcome contributions to improve the user panel and admin dashboard. Whether it’s enhancing the UI, optimizing the backend, or adding new features, your input is valuable. Please submit a pull request or open an issue to start contributing.
 
 ## Author's Message to Contributors
 
