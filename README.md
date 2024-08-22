@@ -102,4 +102,4 @@ For now, I'm focused on creating a working business while I continue my computer
 
 Looking forward to collaborating with you all!
 
-![paypal-gif](https://github.com/user-attachments/assets/f4ff5db3-f123-45b7-8f71-fbfd199f316b)
+![goof](https://github.com/user-attachments/assets/b97c0eff-9ca0-4925-a577-9a1598df96bd)
