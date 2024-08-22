@@ -92,6 +92,10 @@ The SQL back-end is built using MariaDB and manages two primary tables:
 
 We welcome contributions to improve the user panel and admin dashboard. Whether it’s enhancing the UI, optimizing the backend, or adding new features, your input is valuable. Please submit a pull request or open an issue to start contributing.
 
+## Suggestions from Contributors
+
+I am looking for a name for my company and I welcome all suggestions. Please feel free to suggest a name for [Votre Nom d'Entreprise] in the footer of this website.
+
 ## Author's Message to Contributors
 
 Hey everyone,
