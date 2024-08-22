@@ -1,5 +1,4 @@
 ![image](https://github.com/user-attachments/assets/3ef0fd33-d144-4ce5-a35b-0eaf554f95d8)
-![image](https://github.com/user-attachments/assets/9f2839f5-5c21-4c2f-b3e8-30d803e83d0e)
 ![image](https://github.com/user-attachments/assets/44d3cb6a-bda2-478f-b7dd-6557c383f162)
 
 # Professional Installation Services - User Panel
