@@ -102,17 +102,19 @@ We welcome contributions to improve the user panel and admin dashboard. Whether 
 I am looking for a name for my company and I welcome all suggestions. Please feel free to suggest a name for [Votre Nom d'Entreprise] in the footer of this website.
 
 ## Author's Message to Contributors
-
 Hey everyone,
 
-I know this is a really basic webpage right now, but I'm passionate about turning it into a fully functional business. While there may be some security issues at this stage, I'm committed to fixing them and I'm actively looking for a positive team of contributors who can help build a secure and professional website. The goal is to manage user requests and, in the future, potentially handle transactions and employee management.
+This project is more than just a basic webpage—it's the starting point of what I believe can become a fully functional and successful business. I am dedicated to turning this vision into reality, and I am actively seeking a positive team of contributors who can help build a secure and professional website.
 
-For now, I'm focused on creating a working business while I continue my computer science studies. This project is also a way for me to earn some money to help cover my expenses, like gas.
+**Why contribute?**
+If you join me in this journey and work on this project, you will be remunerated for your efforts. Moreover, if this business takes off, there is potential for it to grow rapidly and earn significant profits. This could ensure us a spot in the trading market, complete with actions and shares, leading to substantial financial rewards for all involved.
 
-Looking forward to collaborating with you all!
+For now, I'm focusing on creating a working business while continuing my computer science studies. This project is also a way for me to generate some income to cover my expenses, like gas.
 
+Looking forward to collaborating with you all
+
+**Support the Project:**
 paypal.me : https://paypal.me/DimitarSimeonov17?country.x=CA&locale.x=en_US
-
 #
 
 ![goof](https://github.com/user-attachments/assets/b97c0eff-9ca0-4925-a577-9a1598df96bd)
