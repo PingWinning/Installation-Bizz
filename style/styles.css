@@ -103,3 +103,29 @@ td {
 td.text-right {
     text-align: right;
 }
+#description-fr,
+#description-en {
+    padding: 20px;
+    background-color: #2d3748; /* Darker shade of gray */
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif; /* Example font */
+}
+
+.text-lg {
+    font-size: 1.125rem; /* Equivalent to 18px */
+}
+
+.text-xl {
+    font-size: 1.25rem; /* Equivalent to 20px */
+}
+
+.leading-relaxed {
+    line-height: 1.75; /* Increase line height for better readability */
+}
+
+@media (min-width: 768px) {
+    #description-fr,
+    #description-en {
+        font-size: 1.25rem; /* Larger font size on medium screens and up */
+    }
+}

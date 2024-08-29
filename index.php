@@ -108,20 +108,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </nav>
 
-    <!-- Description Section -->
-    <section class="p-6 text-center">
-        <div class="container mx-auto">
-            <!-- French Description -->
-            <p id="description-fr" class="text-xl mb-6">
-                Nous offrons des services d'installation de vos équipements, qu'il s'agisse de supports pour laveuse, sécheuse, ou de l'installation de votre tour sécheuse-laveuse avec le kit de superposition fourni par vos soins. Nous installons également vos téléviseurs sur des supports muraux ou directement sur le mur de votre choix. De plus, nous nous chargeons du retrait et du recyclage des boîtes. Nous assurons l'installation et le branchement de vos canapés sectionnels, que ce soit pour les descendre dans votre sous-sol ou les monter dans votre salon. Nous proposons également des services d'installation de fours, réfrigérateurs, micro-ondes, et d'autres appareils électroménagers. Nos services de déménagement couvrent Laval et Montréal. Pour des déménagements à plus grande distance, des frais supplémentaires peuvent s'appliquer.
-            </p>
-            <!-- English Description -->
-            <p id="description-en" class="text-xl mb-6 hidden">
-                We offer installation services for your equipment, whether it's stands for your washer, dryer, or the installation of your washer-dryer tower with the stacking kit provided by you. We also install your televisions on wall mounts or directly on the wall of your choice. Additionally, we handle the removal and recycling of boxes. We ensure the installation and connection of your sectional sofas, whether it’s bringing them down to your basement or up to your living room. We also provide installation services for ovens, refrigerators, microwaves, and other appliances. Our moving services cover Laval and Montreal. For moves to greater distances, additional fees may apply.
-            </p>
-        </div>
-    </section>
-
     <!-- Services Section -->
     <section class="p-6">
         <div class="container mx-auto">
@@ -154,6 +140,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </section>
+
+    <!-- Description Section -->
+    <section class="p-6 text-center bg-gray-900 text-white">
+        <div class="container mx-auto">
+            <!-- French Description -->
+            <div class="mb-6" id="description-fr">
+                <p class="text-lg md:text-xl leading-relaxed text-justify">
+                    Nous offrons des services d'installation de vos équipements, qu'il s'agisse de supports pour laveuse, sécheuse, ou de l'installation de votre tour sécheuse-laveuse avec le kit de superposition fourni par vos soins. Nous installons également vos téléviseurs sur des supports muraux ou directement sur le mur de votre choix. De plus, nous nous chargeons du retrait et du recyclage des boîtes. Nous assurons l'installation et le branchement de vos canapés sectionnels, que ce soit pour les descendre dans votre sous-sol ou les monter dans votre salon. Nous proposons également des services d'installation de fours, réfrigérateurs, micro-ondes, et d'autres appareils électroménagers. Nos services de déménagement couvrent Laval et Montréal. Pour des déménagements à plus grande distance, des frais supplémentaires peuvent s'appliquer.
+                </p>
+            </div>
+            <!-- English Description -->
+            <div class="mb-6 hidden" id="description-en">
+                <p class="text-lg md:text-xl leading-relaxed text-justify">
+                    We offer installation services for your equipment, whether it's stands for your washer, dryer, or the installation of your washer-dryer tower with the stacking kit provided by you. We also install your televisions on wall mounts or directly on the wall of your choice. Additionally, we handle the removal and recycling of boxes. We ensure the installation and connection of your sectional sofas, whether it’s bringing them down to your basement or up to your living room. We also provide installation services for ovens, refrigerators, microwaves, and other appliances. Our moving services cover Laval and Montreal. For moves to greater distances, additional fees may apply.
+                </p>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Contact Form Section -->
     <section class="p-6 bg-gray-800">
