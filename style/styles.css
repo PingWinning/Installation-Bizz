@@ -47,3 +47,59 @@ body {
 .hidden {
     display: none;
 }
+footer {
+    background-color: #1f2937; /* Tailwind's bg-gray-900 */
+    padding: 2rem; /* Tailwind's p-8 */
+    color: #d1d5db; /* Tailwind's text-gray-400 */
+}
+
+footer h3 {
+    font-size: 1.25rem; /* Tailwind's text-xl */
+    font-weight: bold; /* Tailwind's font-bold */
+    margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+footer p, footer ul {
+    margin: 0.5rem 0;
+}
+
+footer ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+footer a {
+    color: #9ca3af; /* Tailwind's text-gray-400 */
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff; /* Tailwind's text-white */
+}
+
+footer .flex {
+    display: flex;
+}
+
+footer .space-x-4 > * + * {
+    margin-left: 1rem;
+}
+
+footer p.text-center {
+    margin-top: 2rem; /* Tailwind's mt-8 */
+    font-size: 0.875rem; /* Tailwind's text-gray-500 */
+    color: #6b7280; /* Tailwind's text-gray-500 */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0.5rem 0; /* Tailwind's py-2 */
+    border-bottom: 1px solid #e5e7eb; /* Tailwind's border-gray-200 */
+}
+
+td.text-right {
+    text-align: right;
+}

@@ -85,6 +85,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Services d'Installation</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body class="bg-gray-900 text-white">
 
@@ -190,9 +192,55 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-900 p-5 text-center text-gray-400">
-        <p>&copy; 2024 [Votre Nom d'Entreprise]. Tous droits réservés.</p>
+   <!-- Footer Section -->
+    <footer class="bg-gray-900 p-8 text-white">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Business Info -->
+            <div>
+                <h3 class="text-xl font-bold mb-2">Professional Installation Services</h3>
+                <p>We offer top-notch installation services, including furniture assembly, TV mounting, and more. Contact us to experience professional and efficient service. - Nous offrons des services d'installation de première qualité, y compris l'assemblage de meubles, la fixation de téléviseurs, et bien plus encore. Contactez-nous pour bénéficier d'un service professionnel et efficace.</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-rss"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <!-- Opening Time -->
+            <div>
+                <h3 class="text-xl font-bold mb-2">Opening Time</h3>
+                <table class="table-auto w-full text-left">
+                    <tbody>
+                        <tr>
+                            <td class="py-2">Monday-Friday:</td>
+                            <td class="py-2 text-right">08:00 To 22:00</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">Saturday:</td>
+                            <td class="py-2 text-right">08:00 To 22:00</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">Sunday:</td>
+                            <td class="py-2 text-right">10:00 To 22:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h3 class="text-xl font-bold mb-2">Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Montreal, Laval</p>
+                <p><i class="fas fa-phone-alt"></i> Montreal: (514) 578-2382</p>
+                <p><i class="fas fa-phone-alt"></i> Laval: (514) 689-1531</p>
+                <p><i class="fas fa-envelope"></i> InstallationServices@gmail.com</p>
+            </div>
+        </div>
+        <p class="text-center text-gray-500 mt-8">&copy; 2024 Professional Installation Services. All rights reserved.</p>
     </footer>
+
 
     <script src="js/script.js"></script>
 </body>
