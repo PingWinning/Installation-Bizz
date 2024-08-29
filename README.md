@@ -1,5 +1,5 @@
 ![image](https://github.com/user-attachments/assets/3ef0fd33-d144-4ce5-a35b-0eaf554f95d8)
-![image](https://github.com/user-attachments/assets/44d3cb6a-bda2-478f-b7dd-6557c383f162)
+![image](https://github.com/user-attachments/assets/b3b4078a-dd05-403b-831a-6e4a37a1056c)
 ![image](https://github.com/user-attachments/assets/68ecf6bb-8174-49de-9bea-bee30d573e3c)
 ![image](https://github.com/user-attachments/assets/b93c1827-afe3-4d30-b74e-ef088388c32c)
 
@@ -16,6 +16,8 @@ This repository contains the user panel for our Professional Installation Servic
 - **Responsive Design:** The interface is fully responsive, ensuring a smooth experience across all devices, from mobile phones to desktops.
 - **Secure Contact Form:** Users can reach out to us directly through the contact form, which includes input validation and error handling to ensure accurate communication.
 - **Real-time Status Updates:** Customers receive instant confirmation of their requests, with status updates available directly in the panel.
+
+![image](https://github.com/user-attachments/assets/3c39a8e8-4239-4ee0-bdb1-a0c2050d1aaf)
 
 ## Installation Services Offered
 
