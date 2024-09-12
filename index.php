@@ -137,6 +137,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <h3 id="service-6-title" class="text-xl font-semibold mb-3">Services de Déménagement</h3>
                     <p id="service-6-desc">Nous offrons des services de déménagement professionnels à Laval et Montréal. Pour des distances plus longues, des frais supplémentaires peuvent s'appliquer.</p>
                 </div>
+                <div class="bg-gray-800 p-5 rounded-lg">
+                    <h3 id="service-7-title" class="text-xl font-semibold mb-3">Configuration de Bureau à Domicile</h3>
+                    <p id="service-7-desc">Nous assistons les clients dans la configuration de bureaux à domicile, y compris l'assemblage de bureaux, de chaises, la mise en place de l'équipement informatique et la gestion des câbles.</p>
+                </div>
+                <div class="bg-gray-800 p-5 rounded-lg">
+                    <h3 id="service-8-title" class="text-xl font-semibold mb-3">Assemblage et Installation de Mobilier d'Extérieur</h3>
+                    <p id="service-8-desc">Nous assemblons et installons des meubles d'extérieur, des BBQs, et des équipements de patio.</p>
+                </div>
+                <div class="bg-gray-800 p-5 rounded-lg">
+                    <h3 id="service-9-title" class="text-xl font-semibold mb-3">Déneigement d'Entrée</h3>
+                    <p id="service-9-desc">Nous offrons des services de déneigement d'entrée et d'entrée de garage pendant l'hiver.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -146,14 +158,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="container mx-auto">
             <!-- French Description -->
             <div class="mb-6" id="description-fr">
+                <h3 class="text-xl font-semibold mb-3">Nos Services</h3>
                 <p class="text-lg md:text-xl leading-relaxed text-justify">
-                    Nous offrons des services d'installation de vos équipements, qu'il s'agisse de supports pour laveuse, sécheuse, ou de l'installation de votre tour sécheuse-laveuse avec le kit de superposition fourni par vos soins. Nous installons également vos téléviseurs sur des supports muraux ou directement sur le mur de votre choix. De plus, nous nous chargeons du retrait et du recyclage des boîtes. Nous assurons l'installation et le branchement de vos canapés sectionnels, que ce soit pour les descendre dans votre sous-sol ou les monter dans votre salon. Nous proposons également des services d'installation de fours, réfrigérateurs, micro-ondes, et d'autres appareils électroménagers. Nos services de déménagement couvrent Laval et Montréal. Pour des déménagements à plus grande distance, des frais supplémentaires peuvent s'appliquer.
+                    Chez [Nom de Votre Entreprise], nous offrons des services d'installation de première qualité pour tous vos besoins. Que ce soit pour installer des supports pour votre laveuse et sécheuse, monter votre tour laveuse-sécheuse avec un kit d'empilage, ou fixer votre télévision au mur idéal, nous sommes là pour vous. Nous prenons également soin des petits détails, comme le retrait et le recyclage des cartons, et nous nous assurons que votre canapé sectionnel est parfaitement placé, que ce soit au sous-sol ou dans le salon. Besoin d’installer votre four, réfrigérateur, micro-ondes ou d’autres appareils ? Considérez cela comme fait. De plus, nous offrons des services de déménagement fiables à Laval et Montréal, avec des options pour de plus longues distances également.
+                </p>
+                <h3 class="text-xl font-semibold mt-3 mb-3">Et Plus Encore</h3>
+                <p class="text-lg md:text-xl leading-relaxed text-justify">
+                Si vous ne voyez pas un service spécifique dans notre liste, ou si vous avez des préoccupations, n’hésitez pas à nous contacter. Nous sommes toujours prêts à adapter nos services pour répondre à vos besoins.
+                </p>
+                <h3 class="text-xl font-semibold mb-3">Pourquoi Nous Choisir ?</h3>
+                <p class="text-lg md:text-xl leading-relaxed text-justify">
+                    Imaginez une histoire qui commence il y a des années, deux frères, un atelier, et une passion inébranlable pour l’art de l’assemblage. Mon frère et moi avons passé des années à travailler pour de grandes entreprises de meubles et de fournitures, ces monopoles où les clients n’ont souvent pas d’autre choix que de recourir à leurs installateurs. Combien de fois avons-nous entendu les récits de clients déçus par ces grandes entreprises, frustrés par des installateurs pressés, des travaux bâclés, ou tout simplement par un manque de temps et d’attention ?
+                </p>
+                <p class="text-lg md:text-xl leading-relaxed text-justify mt-3">
+                    C’est de là qu’est née notre entreprise. Ce n’est pas seulement un travail pour nous, c’est une mission. Chaque vis que nous serrons, chaque meuble que nous montons, chaque télé que nous accrochons est un acte de confiance entre vous et nous. Avec nous, vous n’êtes pas simplement un client ; vous devenez une partie de notre histoire, de notre aventure. Nous sommes une petite équipe, et c’est là notre force. Nous travaillons en parfaite harmonie pour garantir que le travail est fait comme il se doit, avec un souci du détail que vous ne trouverez nulle part ailleurs.
+                </p>
+                <p class="text-lg md:text-xl leading-relaxed text-justify mt-3">
+                    Les grandes entreprises ? Elles sont submergées, jonglent avec trop de clients, pressées par le temps, et souvent leurs employés sont sous-payés. Mais pas nous. Chaque mission est une œuvre unique, et nous sommes déterminés à prouver que la qualité et l’attention personnelle sont toujours d’actualité. Avec nous, vous faites partie d’un récit où chaque geste compte, où votre satisfaction est notre plus grande récompense.
                 </p>
             </div>
             <!-- English Description -->
             <div class="mb-6 hidden" id="description-en">
+                <h3 class="text-xl font-semibold mb-3">Our Services</h3>
                 <p class="text-lg md:text-xl leading-relaxed text-justify">
-                    We offer installation services for your equipment, whether it's stands for your washer, dryer, or the installation of your washer-dryer tower with the stacking kit provided by you. We also install your televisions on wall mounts or directly on the wall of your choice. Additionally, we handle the removal and recycling of boxes. We ensure the installation and connection of your sectional sofas, whether it’s bringing them down to your basement or up to your living room. We also provide installation services for ovens, refrigerators, microwaves, and other appliances. Our moving services cover Laval and Montreal. For moves to greater distances, additional fees may apply.
+                    At [Your Company Name], we offer top-notch installation services for all your needs. Whether you're looking to install a washer and dryer stand, set up your washer-dryer tower with a stacking kit, or securely mount your TV on the perfect wall, we’ve got you covered. We take care of the small details too, from removing and recycling boxes to ensuring that your sectional sofa is perfectly placed, whether it’s in the basement or the living room. Need to install your oven, refrigerator, microwave, or other appliances? Consider it done. Plus, we offer reliable moving services across Laval and Montreal, with options for long-distance moves as well.
+                </p>
+                <h3 class="text-xl font-semibold mt-3 mb-3">And Much More</h3>
+                <p class="text-lg md:text-xl leading-relaxed text-justify">
+                    If you don’t see a specific service listed or have special concerns, don’t hesitate to contact us. We're always ready to customize our services to meet your unique needs.
+                </p>
+                <h3 class="text-xl font-semibold mb-3">Why Choose Us?</h3>
+                <p class="text-lg md:text-xl leading-relaxed text-justify">
+                    Imagine a story that began years ago, with two brothers, a workshop, and an unwavering passion for the art of assembly. My brother and I spent years working for large furniture and appliance companies – those monopolies where clients often had no choice but to rely on their installers. How many times did we hear stories of clients let down by these big companies, frustrated with rushed installers, sloppy work, or simply a lack of care and attention?
+                </p>
+                <p class="text-lg md:text-xl leading-relaxed text-justify mt-3">
+                    That’s how our company was born. This isn’t just a job for us; it’s a mission. Every screw we tighten, every piece of furniture we assemble, every TV we mount represents a bond of trust between you and us. With us, you’re not just a client; you become part of our story, part of our adventure. We are a small team, and that’s our strength. We work in perfect harmony to ensure the job is done right, with attention to detail that you won’t find anywhere else.
+                </p>
+                <p class="text-lg md:text-xl leading-relaxed text-justify mt-3">
+                    Big companies? They’re overwhelmed, juggling too many clients, racing against time, and often underpaying their employees. But not us. Every task is a unique piece of work, and we’re committed to proving that quality and personal attention are still very much alive. With us, you’re part of a narrative where every action counts, where your satisfaction is our greatest reward.
                 </p>
             </div>
         </div>

@@ -31,6 +31,15 @@ document.getElementById('switch').addEventListener('change', function() {
         document.getElementById('service-6-title').textContent = "Moving Services";
         document.getElementById('service-6-desc').textContent = "We provide professional moving services in Laval and Montreal. For longer distances, additional fees may apply.";
 
+        document.getElementById('service-7-title').textContent = "Home Office Setup";
+        document.getElementById('service-7-desc').textContent = "We assist clients in setting up home offices, including assembling desks, chairs, setting up computer equipment, and cable management.";
+
+        document.getElementById('service-8-title').textContent = "Outdoor Furniture Assembly and Installation";
+        document.getElementById('service-8-desc').textContent = "We assemble and install outdoor furniture, BBQs, and patio equipment.";
+
+        document.getElementById('service-9-title').textContent = "Driveway Snow Removal";
+        document.getElementById('service-9-desc').textContent = "We offer driveway snow removal and garage entrance snow removal services during the winter.";
+
         // Update contact form fields
         document.querySelector("label[for='name']").textContent = "Name";
         document.getElementById('name').placeholder = "Your Name";
@@ -74,6 +83,15 @@ document.getElementById('switch').addEventListener('change', function() {
         
         document.getElementById('service-6-title').textContent = "Services de Déménagement";
         document.getElementById('service-6-desc').textContent = "Nous offrons des services de déménagement professionnels à Laval et Montréal. Pour des distances plus longues, des frais supplémentaires peuvent s'appliquer.";
+
+        document.getElementById('service-7-title').textContent = "Configuration de Bureau à Domicile";
+        document.getElementById('service-7-desc').textContent = "Nous assistons les clients dans la configuration de bureaux à domicile, y compris l'assemblage de bureaux, de chaises, la mise en place de l'équipement informatique et la gestion des câbles.";
+
+        document.getElementById('service-8-title').textContent = "Assemblage et Installation de Mobilier d'Extérieur";
+        document.getElementById('service-8-desc').textContent = "Nous assemblons et installons des meubles d'extérieur, des BBQs, et des équipements de patio.";
+
+        document.getElementById('service-9-title').textContent = "Déneigement d'Entrée";
+        document.getElementById('service-9-desc').textContent = "Nous offrons des services de déneigement d'entrée et d'entrée de garage pendant l'hiver.";
 
         // Update contact form fields
         document.querySelector("label[for='name']").textContent = "Nom";
