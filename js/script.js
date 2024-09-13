@@ -109,3 +109,26 @@ document.getElementById('switch').addEventListener('change', function() {
         document.querySelector("button[type='submit']").textContent = "Envoyer";
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("toggleText").onclick = function() {
+        toggleText();
+    };
+});
+
+
+function toggleText(language) {
+    var moreText = document.getElementById("more-" + language);
+    var dots = document.getElementById("dots-" + language);
+    var toggleBtn = document.getElementById("toggleText-" + language);
+
+    if (moreText.classList.contains("hidden")) {
+        dots.classList.add("hidden");
+        moreText.classList.remove("hidden");
+        toggleBtn.innerHTML = language === "fr" ? "voir moins" : "see less";
+    } else {
+        dots.classList.remove("hidden");
+        moreText.classList.add("hidden");
+        toggleBtn.innerHTML = language === "fr" ? "voir plus" : "see more";
+    }
+}

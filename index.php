@@ -154,29 +154,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </section>
 
     <!-- Description Section -->
-    <section class="p-6 text-center bg-gray-900 text-white">
+   <!-- Description Section -->
+   <section class="p-6 text-center bg-gray-900 text-white">
         <div class="container mx-auto">
             <!-- French Description -->
             <div class="mb-6" id="description-fr">
                 <h3 class="text-xl font-semibold mb-3">Nos Services</h3>
-                <p class="text-lg md:text-xl leading-relaxed text-justify">
-                    Chez [Nom de Votre Entreprise], nous offrons des services d'installation de première qualité pour tous vos besoins. Que ce soit pour installer des supports pour votre laveuse et sécheuse, monter votre tour laveuse-sécheuse avec un kit d'empilage, ou fixer votre télévision au mur idéal, nous sommes là pour vous. Nous prenons également soin des petits détails, comme le retrait et le recyclage des cartons, et nous nous assurons que votre canapé sectionnel est parfaitement placé, que ce soit au sous-sol ou dans le salon. Besoin d’installer votre four, réfrigérateur, micro-ondes ou d’autres appareils ? Considérez cela comme fait. De plus, nous offrons des services de déménagement fiables à Laval et Montréal, avec des options pour de plus longues distances également.
-                </p>
+                <div>
+                    <p class="text-lg md:text-xl leading-relaxed text-justify">
+                        Chez [Nom de Votre Entreprise], nous offrons des services d'installation de première qualité pour tous vos besoins. Que ce soit pour installer des supports pour votre laveuse et sécheuse, monter votre tour laveuse-sécheuse avec un kit d'empilage, ou fixer votre télévision au mur idéal, nous sommes là pour vous. Nous prenons également soin des petits détails, comme le retrait et le recyclage des cartons, et nous nous assurons que votre canapé sectionnel est parfaitement placé, que ce soit au sous-sol ou dans le salon. Besoin d’installer votre four, réfrigérateur, micro-ondes ou d’autres appareils ? Considérez cela comme fait. De plus, nous offrons des services de déménagement fiables à Laval et Montréal, avec des options pour de plus longues distances également.
+                    </p>
+                </div>
+
                 <h3 class="text-xl font-semibold mt-3 mb-3">Et Plus Encore</h3>
-                <p class="text-lg md:text-xl leading-relaxed text-justify">
-                Si vous ne voyez pas un service spécifique dans notre liste, ou si vous avez des préoccupations, n’hésitez pas à nous contacter. Nous sommes toujours prêts à adapter nos services pour répondre à vos besoins.
-                </p>
+                <div>
+                    <p class="text-lg md:text-xl leading-relaxed text-justify">
+                        Si vous ne voyez pas un service spécifique dans notre liste, ou si vous avez des préoccupations, n’hésitez pas à nous contacter. Nous sommes toujours prêts à adapter nos services pour répondre à vos besoins.
+                    </p>
+                </div>
+
                 <h3 class="text-xl font-semibold mb-3">Pourquoi Nous Choisir ?</h3>
-                <p class="text-lg md:text-xl leading-relaxed text-justify">
-                    Imaginez une histoire qui commence il y a des années, deux frères, un atelier, et une passion inébranlable pour l’art de l’assemblage. Mon frère et moi avons passé des années à travailler pour de grandes entreprises de meubles et de fournitures, ces monopoles où les clients n’ont souvent pas d’autre choix que de recourir à leurs installateurs. Combien de fois avons-nous entendu les récits de clients déçus par ces grandes entreprises, frustrés par des installateurs pressés, des travaux bâclés, ou tout simplement par un manque de temps et d’attention ?
-                </p>
-                <p class="text-lg md:text-xl leading-relaxed text-justify mt-3">
-                    C’est de là qu’est née notre entreprise. Ce n’est pas seulement un travail pour nous, c’est une mission. Chaque vis que nous serrons, chaque meuble que nous montons, chaque télé que nous accrochons est un acte de confiance entre vous et nous. Avec nous, vous n’êtes pas simplement un client ; vous devenez une partie de notre histoire, de notre aventure. Nous sommes une petite équipe, et c’est là notre force. Nous travaillons en parfaite harmonie pour garantir que le travail est fait comme il se doit, avec un souci du détail que vous ne trouverez nulle part ailleurs.
-                </p>
-                <p class="text-lg md:text-xl leading-relaxed text-justify mt-3">
-                    Les grandes entreprises ? Elles sont submergées, jonglent avec trop de clients, pressées par le temps, et souvent leurs employés sont sous-payés. Mais pas nous. Chaque mission est une œuvre unique, et nous sommes déterminés à prouver que la qualité et l’attention personnelle sont toujours d’actualité. Avec nous, vous faites partie d’un récit où chaque geste compte, où votre satisfaction est notre plus grande récompense.
-                </p>
+                <div>
+                    <p class="text-lg md:text-xl leading-relaxed text-justify">
+                        Imaginez une histoire qui commence il y a des années, deux frères, un atelier, et une passion inébranlable pour l’art de l’assemblage.
+                        <span id="dots-fr">...</span><span id="more-fr" class="hidden"> Mon frère et moi avons passé des années à travailler pour de grandes entreprises de meubles et de fournitures, ces monopoles où les clients n’ont souvent pas d’autre choix que de recourir à leurs installateurs. Combien de fois avons-nous entendu les récits de clients déçus par ces grandes entreprises, frustrés par des installateurs pressés, des travaux bâclés, ou tout simplement par un manque de temps et d’attention ?
+                        <br><br>
+                        C’est de là qu’est née notre entreprise. Ce n’est pas seulement un travail pour nous, c’est une mission. Chaque vis que nous serrons, chaque meuble que nous montons, chaque télé que nous accrochons est un acte de confiance entre vous et nous. Avec nous, vous n’êtes pas simplement un client ; vous devenez une partie de notre histoire, de notre aventure. Nous sommes une petite équipe, et c’est là notre force. Nous travaillons en parfaite harmonie pour garantir que le travail est fait comme il se doit, avec un souci du détail que vous ne trouverez nulle part ailleurs.
+                        <br><br>
+                        Les grandes entreprises ? Elles sont submergées, jonglent avec trop de clients, pressées par le temps, et souvent leurs employés sont sous-payés. Mais pas nous. Chaque mission est une œuvre unique, et nous sommes déterminés à prouver que la qualité et l’attention personnelle sont toujours d’actualité. Avec nous, vous faites partie d’un récit où chaque geste compte, où votre satisfaction est notre plus grande récompense.</span>
+                    </p>
+                    <a class="cursor-pointer" onclick="toggleText('fr')" id="toggleText-fr">voir plus</a>
+                </div>
             </div>
+
             <!-- English Description -->
             <div class="mb-6 hidden" id="description-en">
                 <h3 class="text-xl font-semibold mb-3">Our Services</h3>
@@ -188,15 +198,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     If you don’t see a specific service listed or have special concerns, don’t hesitate to contact us. We're always ready to customize our services to meet your unique needs.
                 </p>
                 <h3 class="text-xl font-semibold mb-3">Why Choose Us?</h3>
-                <p class="text-lg md:text-xl leading-relaxed text-justify">
-                    Imagine a story that began years ago, with two brothers, a workshop, and an unwavering passion for the art of assembly. My brother and I spent years working for large furniture and appliance companies – those monopolies where clients often had no choice but to rely on their installers. How many times did we hear stories of clients let down by these big companies, frustrated with rushed installers, sloppy work, or simply a lack of care and attention?
-                </p>
-                <p class="text-lg md:text-xl leading-relaxed text-justify mt-3">
-                    That’s how our company was born. This isn’t just a job for us; it’s a mission. Every screw we tighten, every piece of furniture we assemble, every TV we mount represents a bond of trust between you and us. With us, you’re not just a client; you become part of our story, part of our adventure. We are a small team, and that’s our strength. We work in perfect harmony to ensure the job is done right, with attention to detail that you won’t find anywhere else.
-                </p>
-                <p class="text-lg md:text-xl leading-relaxed text-justify mt-3">
-                    Big companies? They’re overwhelmed, juggling too many clients, racing against time, and often underpaying their employees. But not us. Every task is a unique piece of work, and we’re committed to proving that quality and personal attention are still very much alive. With us, you’re part of a narrative where every action counts, where your satisfaction is our greatest reward.
-                </p>
+                <div>
+                    <p class="text-lg md:text-xl leading-relaxed text-justify">
+                        Imagine a story that began years ago, with two brothers, a workshop, and an unwavering passion for the art of assembly.
+                        <span id="dots-en">...</span><span id="more-en" class="hidden"> My brother and I spent years working for large furniture and appliance companies – those monopolies where clients often had no choice but to rely on their installers. How many times did we hear stories of clients let down by these big companies, frustrated with rushed installers, sloppy work, or simply a lack of care and attention?
+                        <br><br>
+                        That’s how our company was born. This isn’t just a job for us; it’s a mission. Every screw we tighten, every piece of furniture we assemble, every TV we mount represents a bond of trust between you and us. With us, you’re not just a client; you become part of our story, part of our adventure. We are a small team, and that’s our strength. We work in perfect harmony to ensure the job is done right, with attention to detail that you won’t find anywhere else.
+                        <br><br>
+                        Big companies? They’re overwhelmed, juggling too many clients, racing against time, and often underpaying their employees. But not us. Every task is a unique piece of work, and we’re committed to proving that quality and personal attention are still very much alive. With us, you’re part of a narrative where every action counts, where your satisfaction is our greatest reward.</span>
+                    </p>
+                    <a class="cursor-pointer" onclick="toggleText('en')" id="toggleText-en">see more</a>
+                </div>
             </div>
         </div>
     </section>
@@ -287,8 +299,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <p class="text-center text-gray-500 mt-8">&copy; 2024 Professional Installation Services. All rights reserved.</p>
     </footer>
-
-
     <script src="js/script.js"></script>
 </body>
 </html>
