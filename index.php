@@ -154,7 +154,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </section>
 
     <!-- Description Section -->
-   <!-- Description Section -->
    <section class="p-6 text-center bg-gray-900 text-white">
         <div class="container mx-auto">
             <!-- French Description -->
