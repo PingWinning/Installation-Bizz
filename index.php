@@ -296,6 +296,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p><i class="fas fa-envelope"></i> InstallationServices@gmail.com</p>
             </div>
         </div>
+        <!-- Truck Animation -->
+        <div class="loop-wrapper">
+            <div class="mountain"></div>
+            <div class="hill"></div>
+            <div class="tree"></div>
+            <div class="tree"></div>
+            <div class="tree"></div>
+            <div class="rock"></div>
+            <div class="truck"></div>
+            <div class="wheels"></div>
+        </div>
+
         <p class="text-center text-gray-500 mt-8">&copy; 2024 Professional Installation Services. All rights reserved.</p>
     </footer>
     <script src="js/script.js"></script>
