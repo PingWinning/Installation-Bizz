@@ -110,48 +110,68 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- Services Section -->
     <section class="p-6">
-        <div class="container mx-auto">
-            <h2 class="text-2xl font-semibold mb-6 text-center" id="services-title">Nos Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-gray-800 p-5 rounded-lg">
-                    <h3 id="service-1-title" class="text-xl font-semibold mb-3">Assemblage de Meubles</h3>
-                    <p id="service-1-desc">Nous assemblons avec expertise tous types de meubles, en veillant à ce que tout soit sécurisé et prêt à l'emploi.</p>
-                </div>
-                <div class="bg-gray-800 p-5 rounded-lg">
-                    <h3 id="service-2-title" class="text-xl font-semibold mb-3">Installation de Téléviseurs</h3>
-                    <p id="service-2-desc">Notre équipe monte en toute sécurité votre téléviseur intelligent sur n'importe quel mur, optimisant ainsi votre expérience de visionnage.</p>
-                </div>
-                <div class="bg-gray-800 p-5 rounded-lg">
-                    <h3 id="service-3-title" class="text-xl font-semibold mb-3">Branchement de Canapés</h3>
-                    <p id="service-3-desc">Nous connectons et configurons les canapés modulaires pour qu'ils s'adaptent parfaitement à votre espace et à votre style de vie.</p>
-                </div>
-                <div class="bg-gray-800 p-5 rounded-lg">
-                    <h3 id="service-4-title" class="text-xl font-semibold mb-3">Ouverture & Recyclage de Boîtes</h3>
-                    <p id="service-4-desc">Nous nous occupons de la tâche fastidieuse du déballage et du recyclage, laissant votre espace propre et bien organisé.</p>
-                </div>
-                <div class="bg-gray-800 p-5 rounded-lg">
-                    <h3 id="service-5-title" class="text-xl font-semibold mb-3">Installations d'Électroménagers</h3>
-                    <p id="service-5-desc">Nous installons vos fours, réfrigérateurs, micro-ondes, et autres appareils avec précision et soin.</p>
-                </div>
-                <div class="bg-gray-800 p-5 rounded-lg">
-                    <h3 id="service-6-title" class="text-xl font-semibold mb-3">Services de Déménagement</h3>
-                    <p id="service-6-desc">Nous offrons des services de déménagement professionnels à Laval et Montréal. Pour des distances plus longues, des frais supplémentaires peuvent s'appliquer.</p>
-                </div>
-                <div class="bg-gray-800 p-5 rounded-lg">
-                    <h3 id="service-7-title" class="text-xl font-semibold mb-3">Configuration de Bureau à Domicile</h3>
-                    <p id="service-7-desc">Nous assistons les clients dans la configuration de bureaux à domicile, y compris l'assemblage de bureaux, de chaises, la mise en place de l'équipement informatique et la gestion des câbles.</p>
-                </div>
-                <div class="bg-gray-800 p-5 rounded-lg">
-                    <h3 id="service-8-title" class="text-xl font-semibold mb-3">Assemblage et Installation de Mobilier d'Extérieur</h3>
-                    <p id="service-8-desc">Nous assemblons et installons des meubles d'extérieur, des BBQs, et des équipements de patio.</p>
-                </div>
-                <div class="bg-gray-800 p-5 rounded-lg">
-                    <h3 id="service-9-title" class="text-xl font-semibold mb-3">Déneigement d'Entrée</h3>
-                    <p id="service-9-desc">Nous offrons des services de déneigement d'entrée et d'entrée de garage pendant l'hiver.</p>
-                </div>
+    <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold mb-6 text-center" id="services-title">
+            <i class="fas fa-tools"></i>&nbsp;Nos Services
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-800 p-5 rounded-lg">
+                <h3 id="service-1-title" class="text-xl font-semibold mb-3">
+                    <i class="fas fa-couch"></i>&nbsp;Assemblage de Meubles/Patio
+                </h3>
+                <p id="service-1-desc">Besoin d'aide pour assembler de nouveaux meubles de bureau ou un salon de patio extérieur pour votre nouvelle terrasse ? Engagez-nous pour vous aider à assembler les éléments de vos meubles d'intérieur et d'extérieur.</p>
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg">
+                <h3 id="service-2-title" class="text-xl font-semibold mb-3">
+                    <i class="fas fa-tv"></i>&nbsp;Installation de Téléviseurs
+                </h3>
+                <p id="service-2-desc">Notre équipe installe en toute sécurité votre téléviseur intelligent sur n'importe quel mur, optimisant ainsi votre expérience de visionnage. Offrez-vous un espace moderne et élégant pour une expérience visuelle améliorée.</p>
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg">
+                <h3 id="service-3-title" class="text-xl font-semibold mb-3">
+                    <i class="fas fa-couch"></i>&nbsp;Branchement de Canapés
+                </h3>
+                <p id="service-3-desc">Nous connectons et configurons les canapés modulaires pour qu'ils s'intègrent parfaitement à votre espace. Nous pouvons également vous conseiller sur le choix et l'agencement des canapés et sectionnels, pour un intérieur à la fois pratique et élégant.</p>
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg">
+                <h3 id="service-4-title" class="text-xl font-semibold mb-3">
+                    <i class="fas fa-recycle"></i>&nbsp;Ouverture & Recyclage de Boîtes
+                </h3>
+                <p id="service-4-desc">Nous nous occupons de la tâche fastidieuse du déballage et du recyclage, laissant votre espace propre et bien organisé. Le respect de l'environnement nous tient à cœur, c'est pourquoi nous recyclons tous les matériaux de manière responsable.</p>
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg">
+                <h3 id="service-5-title" class="text-xl font-semibold mb-3">
+                    <i class="fas fa-blender"></i>&nbsp;Installations d'Électroménagers
+                </h3>
+                <p id="service-5-desc">Nous installons vos fours, réfrigérateurs, micro-ondes et autres appareils avec précision et soin. Nous nous chargeons également de la livraison de vos électroménagers à domicile, si besoin.</p>
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg">
+                <h3 id="service-6-title" class="text-xl font-semibold mb-3">
+                    <i class="fas fa-truck-moving"></i>&nbsp;Services de Déménagement
+                </h3>
+                <p id="service-6-desc">Nous offrons des services de déménagement professionnels à Laval et Montréal. Pour des distances plus longues, des frais supplémentaires peuvent s'appliquer.</p>
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg">
+                <h3 id="service-7-title" class="text-xl font-semibold mb-3">
+                    <i class="fas fa-desktop"></i>&nbsp;Configuration de Bureau à Domicile
+                </h3>
+                <p id="service-7-desc">Nous assistons les clients dans la configuration de bureaux à domicile, y compris l'assemblage de bureaux, de chaises, la mise en place de l'équipement informatique et la gestion des câbles.</p>
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg">
+                <h3 id="service-8-title" class="text-xl font-semibold mb-3">
+                    <i class="fas fa-wrench"></i>&nbsp;Réparations domestiques
+                </h3>
+                <p id="service-8-desc">Besoin d'aide pour des réparations à la maison ? Confiez-nous la tâche de fixer vos portes, remplacer des poignées, ou encore réparer les fissures et trous dans vos murs. Notre expertise garantit un travail soigné et rapide, pour que votre maison retrouve tout son éclat en un rien de temps !</p>
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg">
+                <h3 id="service-9-title" class="text-xl font-semibold mb-3">
+                    <i class="fas fa-snowflake"></i>&nbsp;Déneigement d'Entrée
+                </h3>
+                <p id="service-9-desc">Nous offrons des services de déneigement d'entrée et d'entrée de garage pendant l'hiver.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Description Section -->
    <section class="p-6 text-center bg-gray-900 text-white">
