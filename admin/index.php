@@ -103,13 +103,22 @@ $totalPages = ceil($totalTickets / $usersPerPage);
 
 <body class="bg-gray-900 text-white">
 
-    <!-- Header with Logout Button -->
-    <div class="flex justify-between items-center p-6 bg-gray-800">
-        <h1 class="text-3xl font-semibold text-white">Admin Dashboard</h1>
-        <button onclick="logout()" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
-            Logout
-        </button>
-    </div>
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-lg font-semibold text-white">
+                Admin Dashboard
+            </div>
+            <ul class="flex space-x-6 text-white">
+                <li><a href="index.php" class="hover:text-blue-400">Home</a></li>
+                <li><a href="schedule.php" class="hover:text-blue-400">Schedule</a></li>
+                <li><a href="bookings.php" class="hover:text-blue-400">Bookings</a></li>
+            </ul>
+            <button onclick="logout()" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                Logout
+            </button>
+        </div>
+    </nav>
 
     <!-- Main Container -->
     <div class="container mx-auto p-6">
