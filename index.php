@@ -93,7 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Navbar with Language Toggle -->
     <nav class="bg-gray-800 p-5 flex justify-between items-center">
         <div>
-            <h1 class="text-3xl font-bold" id="main-title">QuickFix Brothers Services Professionnels d'Installation</h1>
+            <h1 class="text-3xl font-bold" id="main-title">Services Professionnels d'Installation</h1>
             <p class="text-gray-400 mt-2" id="subtitle">Votre partenaire de confiance pour une installation sans tracas</p>
         </div>
         <div class="flex items-center">
@@ -111,6 +111,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Services Section -->
     <section class="p-6">
     <div class="container mx-auto">
+        <h1 class="text-4xl font-semibold mb-2 text-center" id="services-title">
+            QuickFix Brothers
+        </h1>
         <h2 class="text-2xl font-semibold mb-6 text-center" id="services-title">
             <i class="fas fa-tools"></i>&nbsp;Nos Services
         </h2>
