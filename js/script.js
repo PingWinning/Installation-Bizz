@@ -7,7 +7,7 @@ document.getElementById('switch').addEventListener('change', function() {
         frDescription.classList.add('hidden');
         enDescription.classList.remove('hidden');
         
-        document.getElementById('main-title').textContent = "Professional Installation Services";
+        document.getElementById('main-title').textContent = "QuickFix Brothers Professional Installation Services";
         document.getElementById('subtitle').textContent = "Your trusted partner for hassle-free setup and installation";
         document.getElementById('services-title').innerHTML = '<i class="fas fa-tools"></i>&nbsp;Our Services';
         document.getElementById('contact-title').textContent = "Contact Us";
@@ -60,7 +60,7 @@ document.getElementById('switch').addEventListener('change', function() {
         enDescription.classList.add('hidden');
         frDescription.classList.remove('hidden');
 
-        document.getElementById('main-title').textContent = "Services Professionnels d'Installation";
+        document.getElementById('main-title').textContent = "QuickFix Brothers Services Professionnels d'Installation";
         document.getElementById('subtitle').textContent = "Votre partenaire de confiance pour une installation sans tracas";
         document.getElementById('services-title').innerHTML = '<i class="fas fa-tools"></i>&nbsp;Nos Services';
         document.getElementById('contact-title').textContent = "Contactez-Nous";

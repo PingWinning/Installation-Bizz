@@ -93,7 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Navbar with Language Toggle -->
     <nav class="bg-gray-800 p-5 flex justify-between items-center">
         <div>
-            <h1 class="text-3xl font-bold" id="main-title">Services Professionnels d'Installation</h1>
+            <h1 class="text-3xl font-bold" id="main-title">QuickFix Brothers Services Professionnels d'Installation</h1>
             <p class="text-gray-400 mt-2" id="subtitle">Votre partenaire de confiance pour une installation sans tracas</p>
         </div>
         <div class="flex items-center">
@@ -181,7 +181,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <h3 class="text-xl font-semibold mb-3">Nos Services</h3>
                 <div>
                     <p class="text-lg md:text-xl leading-relaxed text-justify">
-                        Chez [Nom de Votre Entreprise], nous offrons des services d'installation de première qualité pour tous vos besoins. Que ce soit pour installer des supports pour votre laveuse et sécheuse, monter votre tour laveuse-sécheuse avec un kit d'empilage, ou fixer votre télévision au mur idéal, nous sommes là pour vous. Nous prenons également soin des petits détails, comme le retrait et le recyclage des cartons, et nous nous assurons que votre canapé sectionnel est parfaitement placé, que ce soit au sous-sol ou dans le salon. Besoin d’installer votre four, réfrigérateur, micro-ondes ou d’autres appareils ? Considérez cela comme fait. De plus, nous offrons des services de déménagement fiables à Laval et Montréal, avec des options pour de plus longues distances également.
+                        Chez QuickFix Brothers, nous offrons des services d'installation de première qualité pour tous vos besoins. Que ce soit pour installer des supports pour votre laveuse et sécheuse, monter votre tour laveuse-sécheuse avec un kit d'empilage, ou fixer votre télévision au mur idéal, nous sommes là pour vous. Nous prenons également soin des petits détails, comme le retrait et le recyclage des cartons, et nous nous assurons que votre canapé sectionnel est parfaitement placé, que ce soit au sous-sol ou dans le salon. Besoin d’installer votre four, réfrigérateur, micro-ondes ou d’autres appareils ? Considérez cela comme fait. De plus, nous offrons des services de déménagement fiables à Laval et Montréal, avec des options pour de plus longues distances également.
                     </p>
                 </div>
 
@@ -210,7 +210,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="mb-6 hidden" id="description-en">
                 <h3 class="text-xl font-semibold mb-3">Our Services</h3>
                 <p class="text-lg md:text-xl leading-relaxed text-justify">
-                    At [Your Company Name], we offer top-notch installation services for all your needs. Whether you're looking to install a washer and dryer stand, set up your washer-dryer tower with a stacking kit, or securely mount your TV on the perfect wall, we’ve got you covered. We take care of the small details too, from removing and recycling boxes to ensuring that your sectional sofa is perfectly placed, whether it’s in the basement or the living room. Need to install your oven, refrigerator, microwave, or other appliances? Consider it done. Plus, we offer reliable moving services across Laval and Montreal, with options for long-distance moves as well.
+                    At QuickFix Brothers, we offer top-notch installation services for all your needs. Whether you're looking to install a washer and dryer stand, set up your washer-dryer tower with a stacking kit, or securely mount your TV on the perfect wall, we’ve got you covered. We take care of the small details too, from removing and recycling boxes to ensuring that your sectional sofa is perfectly placed, whether it’s in the basement or the living room. Need to install your oven, refrigerator, microwave, or other appliances? Consider it done. Plus, we offer reliable moving services across Laval and Montreal, with options for long-distance moves as well.
                 </p>
                 <h3 class="text-xl font-semibold mt-3 mb-3">And Much More</h3>
                 <p class="text-lg md:text-xl leading-relaxed text-justify">
@@ -328,8 +328,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="wheels"></div>
         </div>
 
-        <p class="text-center text-gray-500 mt-8">&copy; 2024 Professional Installation Services. All rights reserved.</p>
+        <p class="text-center text-gray-500 mt-8">&copy; <span id="year"></span> QuickFix Brothers Professional Installation Services. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>
