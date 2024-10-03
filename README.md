@@ -15,6 +15,7 @@ This repository contains the user panel for our Professional Installation Servic
 - **Responsive Design:** The interface is fully responsive, ensuring a smooth experience across all devices, from mobile phones to desktops.
 - **Secure Contact Form:** Users can reach out to us directly through the contact form, which includes input validation and error handling to ensure accurate communication.
 - **Real-time Status Updates:** Customers receive instant confirmation of their requests, with status updates available directly in the panel.
+- **Scheduling System:** We are currently working on a scheduling system to simplify the booking process. The idea is that the admin will share their working schedules, and clients can book a time and day for the service they want to be done. This system will streamline the booking process, saving time for both parties and making it easier to manage appointments.
 
 ![image](https://github.com/user-attachments/assets/3c39a8e8-4239-4ee0-bdb1-a0c2050d1aaf)
 
@@ -40,18 +41,6 @@ The admin panel allows administrators to manage user requests effectively. Key f
 - **Status Updates:** Administrators can update the status of user requests directly from the admin panel, helping keep track of progress.
 - **Request Details:** For longer user requests, a "See More" button reveals the full content without cluttering the interface.
 - **Deletion of Tickets:** Administrators can delete tickets if necessary, helping maintain a clean and organized database.
-
-### How to Use the Admin Panel
-
-1. **Login:**
-   - Navigate to the login page and use the default credentials (`Boss007` / `pass`) to access the admin dashboard.
-   - Upon successful login, administrators are redirected to the user tickets management page.
-
-2. **Managing Tickets:**
-   - Use the filters and pagination controls to navigate through the tickets.
-   - Update the status of a ticket by selecting the appropriate status from the dropdown menu.
-   - View full request details by clicking the "See More" button, which opens a modal with the complete message.
-   - To delete a ticket, click the "Delete" button next to the ticket.
 
 ## SQL Back-end Overview
 
@@ -102,11 +91,8 @@ The SQL back-end is built using MariaDB and manages two primary tables:
 
 We welcome contributions to improve the user panel and admin dashboard. Whether it’s enhancing the UI, optimizing the backend, or adding new features, your input is valuable. Please submit a pull request or open an issue to start contributing.
 
-## Suggestions from Contributors
-
-I am looking for a name for my company and I welcome all suggestions. Please feel free to suggest a name for [Votre Nom d'Entreprise] in the footer of this website.
-
 ## Author's Message to Contributors
+
 Hey everyone,
 
 This project is more than just a basic webpage—it's the starting point of what I believe can become a fully functional and successful business. I am dedicated to turning this vision into reality, and I am actively seeking a positive team of contributors who can help build a secure and professional website.
@@ -116,10 +102,10 @@ If you join me in this journey and work on this project, you will be remunerated
 
 For now, I'm focusing on creating a working business while continuing my computer science studies. This project is also a way for me to generate some income to cover my expenses, like gas.
 
-Looking forward to collaborating with you all
+Looking forward to collaborating with you all.
 
 **Support the Project:**
-paypal.me : https://paypal.me/DimitarSimeonov17?country.x=CA&locale.x=en_US
+[PayPal Donation](https://paypal.me/DimitarSimeonov17?country.x=CA&locale.x=en_US)
 #
 
 ![goof](https://github.com/user-attachments/assets/b97c0eff-9ca0-4925-a577-9a1598df96bd)
