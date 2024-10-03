@@ -1,7 +1,7 @@
-![image](https://github.com/user-attachments/assets/3ef0fd33-d144-4ce5-a35b-0eaf554f95d8)
-![image](https://github.com/user-attachments/assets/b93c1827-afe3-4d30-b74e-ef088388c32c)
-![image](https://github.com/user-attachments/assets/74dcdad7-4f52-4519-b591-739fe522d915)
-![image](https://github.com/user-attachments/assets/68ecf6bb-8174-49de-9bea-bee30d573e3c)
+![image](https://github.com/user-attachments/assets/f4562832-19f1-49f5-81f8-8b497e89c708)
+![image](https://github.com/user-attachments/assets/207cbfdf-0aee-45f8-9ca8-3cf5da01f927)
+![image](https://github.com/user-attachments/assets/8f91a892-f71d-4dd9-aece-ec888f0e87af)
+![image](https://github.com/user-attachments/assets/2152d188-453d-4458-b4c1-065a8f1aef90)
 
 
 # Professional Installation Services - User Panel
@@ -17,7 +17,7 @@ This repository contains the user panel for our Professional Installation Servic
 - **Real-time Status Updates:** Customers receive instant confirmation of their requests, with status updates available directly in the panel.
 - **Scheduling System:** We are currently working on a scheduling system to simplify the booking process. The idea is that the admin will share their working schedules, and clients can book a time and day for the service they want to be done. This system will streamline the booking process, saving time for both parties and making it easier to manage appointments.
 
-![image](https://github.com/user-attachments/assets/3c39a8e8-4239-4ee0-bdb1-a0c2050d1aaf)
+![image](https://github.com/user-attachments/assets/7c5211d9-4221-403d-bce8-cc24174d9ea1)
 
 ## Installation Services Offered
 
@@ -30,7 +30,7 @@ This repository contains the user panel for our Professional Installation Servic
 
 ## Admin Panel Overview
 
-![image](https://github.com/user-attachments/assets/68539511-5516-4bef-85fc-38acf57c2274)
+![image](https://github.com/user-attachments/assets/50f2a191-9351-4e31-a565-a188b69663f7)
 
 The admin panel allows administrators to manage user requests effectively. Key features include:
 
