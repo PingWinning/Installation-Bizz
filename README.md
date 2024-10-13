@@ -103,6 +103,17 @@ The SQL back-end is built using MariaDB and manages two primary tables:
 
 We welcome contributions to improve the user panel and admin dashboard. Whether it’s enhancing the UI, optimizing the backend, or adding new features, your input is valuable. Please submit a pull request or open an issue to start contributing.
 
+We’re looking for contributors who can help us improve and expand our project. Here are some areas where you can make an impact:
+
+- **Scheduling System:** 
+We need developers to help build a scheduling system for administrators (the owners of the website) that simplifies the booking process for users. The goal is to create a user-friendly system where users can easily check our available work schedule and select a time span that fits their needs. This will help streamline the booking process and make it easier for clients to book our services.
+
+### UI/UX Designers
+If you're a UI/UX designer, we'd love your help in creating a simple yet effective dark theme for the website. The goal is to enhance the user experience and improve the visibility of the design while keeping things intuitive and clean. In the future, we also plan to develop a mobile iOS/Android application, so your designs should be adaptable to both web and mobile platforms. Cool transitions and a smooth, modern feel are highly encouraged.
+
+### Videographers & Montage Artists
+We're planning a cinematic ad for our business and are looking for talented videographers and montage artists to help bring this idea to life. If you're interested, please contact me on Instagram and share your portfolio or previous work. We're excited to collaborate and create something amazing together!
+
 ## Author's Message to Contributors
 
 Hey everyone,
