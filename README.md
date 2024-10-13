@@ -116,7 +116,7 @@ We're planning a cinematic ad for our business and are looking for talented vide
 
 ---
 
-Follow us on Instagram: [@dimitar_simeo](https://instagram.com/dimitar_simeo)
+Follow me on Instagram: [@dimitar_simeo](https://instagram.com/dimitar_simeo)
 
 ## Author's Message to Contributors
 
