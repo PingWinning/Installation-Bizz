@@ -12,8 +12,8 @@ Fratres Praesto (QuickFix Brothers) is a dedicated team of skilled handymen, com
 
 # Fratres Praesto
 
-**Fratres** means "brothers" in Latin.  
-**Praesto** can mean "to be ready" or "to assist," which ties into the idea of being quick and efficient.  
+- **Fratres** means "brothers" in Latin.  
+- **Praesto** can mean "to be ready" or "to assist," which ties into the idea of being quick and efficient.  
 It has a professional yet timeless feel, emphasizing the bond between brothers and their readiness to provide excellent service.
 
 I saw an opportunity to make a positive change in the world, and that's why I included my younger brother in this handyman business. It's my duty to teach him the real, honest way to make money in the realm of the real world, while also creating a strong bond between us. Together, we aim to not only provide excellent services but also to build something meaningful as brothers.
