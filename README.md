@@ -114,6 +114,10 @@ If you're a UI/UX designer, we'd love your help in creating a simple yet effecti
 ### Videographers & Montage Artists
 We're planning a cinematic ad for our business and are looking for talented videographers and montage artists to help bring this idea to life. If you're interested, please contact me on Instagram and share your portfolio or previous work. We're excited to collaborate and create something amazing together!
 
+---
+
+Follow us on Instagram: [@dimitar_simeo](https://instagram.com/dimitar_simeo)
+
 ## Author's Message to Contributors
 
 Hey everyone,
