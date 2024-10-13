@@ -111,7 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Services Section -->
     <section class="p-6">
     <div class="container mx-auto">
-        <h1 class="text-4xl font-semibold mb-2 text-center" id="services-title">
+        <h1 class="text-4xl font-semibold mb-2 text-center">
             QuickFix Brothers
         </h1>
         <h2 class="text-2xl font-semibold mb-6 text-center" id="services-title">

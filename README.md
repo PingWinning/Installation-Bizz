@@ -17,6 +17,8 @@ This repository contains the user panel for our Professional Installation Servic
 - **Real-time Status Updates:** Customers receive instant confirmation of their requests, with status updates available directly in the panel.
 - **Scheduling System:** We are currently working on a scheduling system to simplify the booking process. The idea is that the admin will share their working schedules, and clients can book a time and day for the service they want to be done. This system will streamline the booking process, saving time for both parties and making it easier to manage appointments.
 
+![image](https://github.com/user-attachments/assets/5143ba11-1e3d-4fe3-96c6-6c8b65eed68f)
+![image](https://github.com/user-attachments/assets/94bca7c2-0794-4214-87fd-991beb47d08f)
 ![image](https://github.com/user-attachments/assets/7c5211d9-4221-403d-bce8-cc24174d9ea1)
 
 ## Installation Services Offered
