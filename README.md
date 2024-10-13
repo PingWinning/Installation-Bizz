@@ -8,9 +8,9 @@
 
 This repository contains the user panel for our Professional Installation Services business, offering a seamless interface for customers to explore and request our services. Our business is dedicated to providing top-notch installation services across Laval and Montreal, ensuring that all your equipment is set up with care and precision.
 
-Fratres Praesto (QuickFix Brothers) is a dedicated team of skilled handymen, committed to delivering fast, reliable, and high-quality services. With a strong bond between brothers and a passion for craftsmanship, we take pride in every project, ensuring your needs are met with precision and care.
-
 # Fratres Praesto
+
+Fratres Praesto (QuickFix Brothers) is a dedicated team of skilled handymen, committed to delivering fast, reliable, and high-quality services. With a strong bond between brothers and a passion for craftsmanship, we take pride in every project, ensuring your needs are met with precision and care.
 
 - **Fratres** means "brothers" in Latin.  
 - **Praesto** can mean "to be ready" or "to assist," which ties into the idea of being quick and efficient.  
