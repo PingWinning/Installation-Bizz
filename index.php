@@ -177,65 +177,126 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </section>
 
     <!-- Description Section -->
-   <section class="p-6 text-center bg-gray-900 text-white">
-        <div class="container mx-auto">
-            <!-- French Description -->
-            <div class="mb-6" id="description-fr">
-                <h3 class="text-xl font-semibold mb-3">Nos Services</h3>
-                <div>
-                    <p class="text-lg md:text-xl leading-relaxed text-justify">
-                        Chez QuickFix Brothers, nous offrons des services d'installation de première qualité pour tous vos besoins. Que ce soit pour installer des supports pour votre laveuse et sécheuse, monter votre tour laveuse-sécheuse avec un kit d'empilage, ou fixer votre télévision au mur idéal, nous sommes là pour vous. Nous prenons également soin des petits détails, comme le retrait et le recyclage des cartons, et nous nous assurons que votre canapé sectionnel est parfaitement placé, que ce soit au sous-sol ou dans le salon. Besoin d’installer votre four, réfrigérateur, micro-ondes ou d’autres appareils ? Considérez cela comme fait. De plus, nous offrons des services de déménagement fiables à Laval et Montréal, avec des options pour de plus longues distances également.
-                    </p>
-                </div>
+<section section id="description-fr" class="p-6 bg-gray-600 text-white">
+    <div class="container mx-auto">
+        <h1 class="text-4xl font-bold text-center mb-12">
+            Pourquoi Choisir <span class="text-yellow-500">QuickFix Brothers ?</span>
+        </h1>
 
-                <h3 class="text-xl font-semibold mt-3 mb-3">Et Plus Encore</h3>
-                <div>
-                    <p class="text-lg md:text-xl leading-relaxed text-justify">
-                        Si vous ne voyez pas un service spécifique dans notre liste, ou si vous avez des préoccupations, n’hésitez pas à nous contacter. Nous sommes toujours prêts à adapter nos services pour répondre à vos besoins.
-                    </p>
-                </div>
-
-                <h3 class="text-xl font-semibold mb-3">Pourquoi Nous Choisir ?</h3>
-                <div>
-                    <p class="text-lg md:text-xl leading-relaxed text-justify">
-                        Imaginez une histoire qui commence il y a des années, deux frères, un atelier, et une passion inébranlable pour l’art de l’assemblage.
-                        <span id="dots-fr">...</span><span id="more-fr" class="hidden"> Mon frère et moi avons passé des années à travailler pour de grandes entreprises de meubles et de fournitures, ces monopoles où les clients n’ont souvent pas d’autre choix que de recourir à leurs installateurs. Combien de fois avons-nous entendu les récits de clients déçus par ces grandes entreprises, frustrés par des installateurs pressés, des travaux bâclés, ou tout simplement par un manque de temps et d’attention ?
-                        <br><br>
-                        C’est de là qu’est née notre entreprise. Ce n’est pas seulement un travail pour nous, c’est une mission. Chaque vis que nous serrons, chaque meuble que nous montons, chaque télé que nous accrochons est un acte de confiance entre vous et nous. Avec nous, vous n’êtes pas simplement un client ; vous devenez une partie de notre histoire, de notre aventure. Nous sommes une petite équipe, et c’est là notre force. Nous travaillons en parfaite harmonie pour garantir que le travail est fait comme il se doit, avec un souci du détail que vous ne trouverez nulle part ailleurs.
-                        <br><br>
-                        Les grandes entreprises ? Elles sont submergées, jonglent avec trop de clients, pressées par le temps, et souvent leurs employés sont sous-payés. Mais pas nous. Chaque mission est une œuvre unique, et nous sommes déterminés à prouver que la qualité et l’attention personnelle sont toujours d’actualité. Avec nous, vous faites partie d’un récit où chaque geste compte, où votre satisfaction est notre plus grande récompense.</span>
-                    </p>
-                    <a class="cursor-pointer" onclick="toggleText('fr')" id="toggleText-fr">voir plus</a>
-                </div>
+        <!-- Features Section -->
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <!-- Transparent Pricing -->
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold mb-4">Prix Transparents</h2>
+                <p class="mt-4 text-gray-400">
+                    Aucun frais caché, aucune surprise : seulement <span class="font-bold text-white">$75/heure</span>, pour une transparence totale qui inspire confiance.
+                </p>
             </div>
 
-            <!-- English Description -->
-            <div class="mb-6 hidden" id="description-en">
-                <h3 class="text-xl font-semibold mb-3">Our Services</h3>
-                <p class="text-lg md:text-xl leading-relaxed text-justify">
-                    At QuickFix Brothers, we offer top-notch installation services for all your needs. Whether you're looking to install a washer and dryer stand, set up your washer-dryer tower with a stacking kit, or securely mount your TV on the perfect wall, we’ve got you covered. We take care of the small details too, from removing and recycling boxes to ensuring that your sectional sofa is perfectly placed, whether it’s in the basement or the living room. Need to install your oven, refrigerator, microwave, or other appliances? Consider it done. Plus, we offer reliable moving services across Laval and Montreal, with options for long-distance moves as well.
+            <!-- Superior Quality -->
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold mb-4">Qualité Supérieure</h2>
+                <p class="mt-4 text-gray-400">
+                    Avec QuickFix Brothers, chaque projet est réalisé avec soin et précision. <span class="font-bold text-white">95%</span> de nos clients disent que nous dépassons leurs attentes.
                 </p>
-                <h3 class="text-xl font-semibold mt-3 mb-3">And Much More</h3>
-                <p class="text-lg md:text-xl leading-relaxed text-justify">
-                    If you don’t see a specific service listed or have special concerns, don’t hesitate to contact us. We're always ready to customize our services to meet your unique needs.
+            </div>
+
+            <!-- Reliable Efficiency -->
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold mb-4">Efficacité Fiable</h2>
+                <p class="mt-4 text-gray-400">
+                    Votre temps est précieux. <span class="font-bold text-white">85%</span> de nos tâches sont accomplies en moins d'une heure, sans compromettre la qualité.
                 </p>
-                <h3 class="text-xl font-semibold mb-3">Why Choose Us?</h3>
-                <div>
-                    <p class="text-lg md:text-xl leading-relaxed text-justify">
-                        Imagine a story that began years ago, with two brothers, a workshop, and an unwavering passion for the art of assembly.
-                        <span id="dots-en">...</span><span id="more-en" class="hidden"> My brother and I spent years working for large furniture and appliance companies – those monopolies where clients often had no choice but to rely on their installers. How many times did we hear stories of clients let down by these big companies, frustrated with rushed installers, sloppy work, or simply a lack of care and attention?
-                        <br><br>
-                        That’s how our company was born. This isn’t just a job for us; it’s a mission. Every screw we tighten, every piece of furniture we assemble, every TV we mount represents a bond of trust between you and us. With us, you’re not just a client; you become part of our story, part of our adventure. We are a small team, and that’s our strength. We work in perfect harmony to ensure the job is done right, with attention to detail that you won’t find anywhere else.
-                        <br><br>
-                        Big companies? They’re overwhelmed, juggling too many clients, racing against time, and often underpaying their employees. But not us. Every task is a unique piece of work, and we’re committed to proving that quality and personal attention are still very much alive. With us, you’re part of a narrative where every action counts, where your satisfaction is our greatest reward.</span>
-                    </p>
-                    <a class="cursor-pointer" onclick="toggleText('en')" id="toggleText-en">see more</a>
-                </div>
             </div>
         </div>
-    </section>
 
+        <!-- Why Us Section -->
+        <div class="mt-16 bg-yellow-500 text-gray-900 rounded-lg p-8">
+            <h2 class="text-3xl font-bold text-center mb-6">Notre Histoire, Votre Confiance</h2>
+            <p class="text-lg leading-8 text-center">
+                Imaginez deux frères, un atelier, et une passion inébranlable pour l’art de l’assemblage. Après des années à travailler pour de grandes entreprises, nous avons décidé de créer une entreprise différente,<strong>une entreprise qui place ses clients au cœur de chaque mission.</strong>
+            </p>
+            <p class="text-lg leading-8 text-center mt-4">
+                Contrairement aux grandes entreprises souvent pressées et débordées, nous prenons le temps de bien faire les choses. Chaque vis que nous serrons et chaque meuble que nous montons sont des symboles de la confiance que vous nous accordez.
+            </p>
+        </div>
 
+        <!-- Closing Section -->
+        <div class="mt-16">
+            <h2 class="text-3xl font-bold text-center mb-4 text-yellow-500">Avec QuickFix Brothers, Chaque Geste Compte</h2>
+            <p class="text-lg text-gray-400 text-center leading-8">
+                En nous choisissant, vous ne faites pas qu'engager des professionnels ; vous rejoignez une aventure où la satisfaction du client est notre priorité absolue. Faites partie de notre histoire et découvrez la différence d’un service véritablement personnalisé.
+            </p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-12">
+            <p class="text-lg text-gray-400">
+                Prêts à transformer vos projets en réalité ? Contactez <span class="text-yellow-500 font-bold">QuickFix Brothers</span> dès aujourd'hui.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="description-en" class="p-6 bg-gray-600 text-white hidden">
+    <div class="container mx-auto">
+        <h1 class="text-4xl font-bold text-center mb-12">
+            Why Choose <span class="text-yellow-500">QuickFix Brothers?</span>
+        </h1>
+
+        <!-- Features Section -->
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <!-- Transparent Pricing -->
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold mb-4">Transparent Pricing</h2>
+                <p class="mt-4 text-gray-400">
+                    No hidden fees, no surprises: just <span class="font-bold text-white">$75/hour</span>, ensuring complete transparency you can trust.
+                </p>
+            </div>
+
+            <!-- Superior Quality -->
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold mb-4">Superior Quality</h2>
+                <p class="mt-4 text-gray-400">
+                    At QuickFix Brothers, every project is executed with care and precision. <span class="font-bold text-white">95%</span> of our clients say we exceed their expectations.
+                </p>
+            </div>
+
+            <!-- Reliable Efficiency -->
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold mb-4">Reliable Efficiency</h2>
+                <p class="mt-4 text-gray-400">
+                    Your time is valuable. <span class="font-bold text-white">85%</span> of our tasks are completed in under an hour without compromising quality.
+                </p>
+            </div>
+        </div>
+
+        <!-- Why Us Section -->
+        <div class="mt-16 bg-yellow-500 text-gray-900 rounded-lg p-8">
+            <h2 class="text-3xl font-bold text-center mb-6">Our Story, Your Trust</h2>
+            <p class="text-lg leading-8 text-center">
+                Imagine two brothers, a workshop, and an unwavering passion for the art of assembly. After years of working for large companies, we decided to create something different—an <strong>enterprise that puts its clients at the heart of every mission.</strong>
+            </p>
+            <p class="text-lg leading-8 text-center mt-4">
+                Unlike large corporations that are often rushed and overwhelmed, we take the time to do things right. Every screw we tighten and every piece of furniture we assemble symbolizes the trust you place in us.
+            </p>
+        </div>
+
+        <!-- Closing Section -->
+        <div class="mt-16">
+            <h2 class="text-3xl font-bold text-center mb-4 text-yellow-500">With QuickFix Brothers, Every Detail Matters</h2>
+            <p class="text-lg text-gray-400 text-center leading-8">
+                By choosing us, you're not just hiring professionals; you're joining an adventure where client satisfaction is our top priority. Become part of our story and experience the difference of truly personalized service.
+            </p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-12">
+            <p class="text-lg text-gray-400">
+                Ready to turn your projects into reality? Contact <span class="text-yellow-500 font-bold">QuickFix Brothers</span> today.
+            </p>
+        </div>
+    </div>
+</section>
     <!-- Contact Form Section -->
     <section class="p-6 bg-gray-800">
         <div class="container mx-auto">
