@@ -82,7 +82,50 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services d'Installation</title>
+    <title>QuickFix Brothers | Handyman Services in Montreal & Laval</title>
+    <meta name="description" content="QuickFix Brothers offers reliable handyman services in Montreal and Laval, including furniture assembly, TV installation, sofa setup, appliance installation, snow removal, and more.">
+    <meta name="keywords" content="
+        handyman Montreal, Laval handyman, 
+        handyman services Montreal, handyman services Laval,
+        furniture assembly Montreal, furniture assembly Laval,
+        patio furniture assembly Montreal, patio furniture assembly Laval, 
+        TV installation Montreal, TV installation Laval,
+        sofa setup Montreal, sofa setup Laval,
+        box opening and recycling Montreal, box opening and recycling Laval,
+        appliance installation Montreal, appliance installation Laval,
+        fridge installation Montreal, fridge installation Laval,
+        microwave installation Montreal, microwave installation Laval,
+        oven installation Montreal, oven installation Laval,
+        moving services Montreal, moving services Laval,
+        home office setup Montreal, home office setup Laval,
+        desk assembly Montreal, desk assembly Laval,
+        chair assembly Montreal, chair assembly Laval,
+        computer setup Montreal, computer setup Laval,
+        cable management Montreal, cable management Laval,
+        domestic repairs Montreal, domestic repairs Laval,
+        door repair Montreal, door repair Laval,
+        handle replacement Montreal, handle replacement Laval,
+        wall crack repair Montreal, wall crack repair Laval,
+        snow removal Montreal, snow removal Laval,
+        driveway snow removal Montreal, driveway snow removal Laval,
+        garage snow removal Montreal, garage snow removal Laval,
+        Stack Kit laundry Montreal, Stack Kit laundry Laval,
+        laundry services Montreal, laundry services Laval,
+        lawn mowing Montreal, lawn mowing Laval,
+        lawn care Montreal, lawn care Laval,
+        handyman Laval, handyman Montreal, affordable handyman Montreal, affordable handyman Laval,
+        expert handyman Montreal, expert handyman Laval
+    ">
+    <meta name="author" content="QuickFix Brothers">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph for SEO -->
+    <meta property="og:title" content="QuickFix Brothers | Handyman Services in Montreal & Laval">
+    <meta property="og:description" content="QuickFix Brothers offers handyman services like furniture assembly, TV mounting, and snow removal in Montreal and Laval. Reliable and affordable!">
+    <meta property="og:url" content="https://quickfixbrothers.com">
+    <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
