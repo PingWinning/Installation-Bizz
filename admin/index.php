@@ -248,7 +248,7 @@ $totalPages = ceil($totalTickets / $usersPerPage);
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === 4 && xhr.status === 200) {
-                    alert("Status updated successfully");
+                    console.log("Status updated successfully");
                 }
             };
             xhr.send("ticket_id=" + ticketId + "&status=" + status);
