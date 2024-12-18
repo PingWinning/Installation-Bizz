@@ -1,30 +1,28 @@
-<?php 
+<?php
 include_once('../includes/config.php');
 
-// Check if a session is not already active
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
 $error = "";
 
-// Your login logic here...
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = htmlspecialchars(trim($_POST["username"]));
     $pass = htmlspecialchars(trim($_POST["password"]));
 
-    // SQL injection prevention using prepared statements
-    $stmt = $conn->prepare("SELECT id, password_hash FROM users WHERE username = ?");
+    // Fetch hashed password and salt for the user
+    $stmt = $conn->prepare("SELECT id, password_hash, salt FROM users WHERE username = ?");
     $stmt->bind_param("s", $user);
     $stmt->execute();
     $stmt->store_result();
 
     if ($stmt->num_rows > 0) {
-        $stmt->bind_result($id, $password_hash);
+        $stmt->bind_result($id, $password_hash, $salt);
         $stmt->fetch();
 
-        // Verify the password
-        if (hash("sha256", $pass) === $password_hash) {
+        // Verify password with the stored salt
+        if (hash('sha256', $salt . $pass) === $password_hash) {
             $_SESSION['username'] = $user;
             header("Location: index.php");
             exit();
