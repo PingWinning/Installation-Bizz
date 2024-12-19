@@ -1,5 +1,8 @@
 <?php
 include_once('../includes/config.php');
+require_once __DIR__ . '../../twilio-php/src/Twilio/autoload.php'; // Include Twilio SDK
+
+use Twilio\Rest\Client;
 
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -11,20 +14,50 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = htmlspecialchars(trim($_POST["username"]));
     $pass = htmlspecialchars(trim($_POST["password"]));
 
-    // Fetch hashed password and salt for the user
-    $stmt = $conn->prepare("SELECT id, password_hash, salt FROM users WHERE username = ?");
+    $stmt = $conn->prepare("SELECT id, password_hash, salt, phone FROM users WHERE username = ?");
     $stmt->bind_param("s", $user);
     $stmt->execute();
     $stmt->store_result();
 
     if ($stmt->num_rows > 0) {
-        $stmt->bind_result($id, $password_hash, $salt);
+        $stmt->bind_result($id, $password_hash, $salt, $phone);
         $stmt->fetch();
 
-        // Verify password with the stored salt
+        // Verify password
         if (hash('sha256', $salt . $pass) === $password_hash) {
-            $_SESSION['username'] = $user;
-            header("Location: index.php");
+            // Generate OTP
+            $otp = str_pad(random_int(100000, 999999), 6, '0', STR_PAD_LEFT);
+            $otp_expiry = date("Y-m-d H:i:s", strtotime("+10 minutes"));
+
+            // Store OTP in the database
+            $updateStmt = $conn->prepare("UPDATE users SET otp = ?, otp_expiry = ? WHERE id = ?");
+            $updateStmt->bind_param("ssi", $otp, $otp_expiry, $id);
+            $updateStmt->execute();
+            $updateStmt->close();
+
+            // Send OTP via Twilio
+            $sid = 'AXXXXXXXXXXXXXXXXXXXXXXXXXXX'; // Replace with your Twilio Account SID
+            $authToken = '0XXXXXXXXXXXXXXXXXXXXXXX0'; // Replace with your Twilio Auth Token
+            $twilioNumber = '+18003825968'; // Replace with your Twilio phone number
+            $client = new Client($sid, $authToken);
+
+            try {
+                $client->messages->create(
+                    $phone,
+                    [
+                        'from' => $twilioNumber,
+                        'body' => "Your QuickFix Brothers one-time password (OTP) for Admin Login is: $otp. This code is valid for 10 minutes. Please do not share it with anyone."
+                    ]
+                );
+            } catch (Exception $e) {
+                $error = "Failed to send OTP. Please try again later.";
+                error_log($e->getMessage()); // Log the error for debugging
+            }
+
+            // Redirect to OTP verification page
+            $_SESSION['otp_user_id'] = $id;
+            $_SESSION['temp_username'] = $user; // Temporarily store username
+            header("Location: otp.php");
             exit();
         } else {
             $error = "Incorrect username or password.";
