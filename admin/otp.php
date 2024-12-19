@@ -11,6 +11,11 @@ if (!isset($_SESSION['otp_user_id']) || !isset($_SESSION['temp_username'])) {
     exit();
 }
 
+// Initialize the failed attempts counter if not set
+if (!isset($_SESSION['failed_otp_attempts'])) {
+    $_SESSION['failed_otp_attempts'] = 0;
+}
+
 $error = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -31,10 +36,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         unset($_SESSION['otp_user_id']); // Remove OTP-related session
         $_SESSION['username'] = $_SESSION['temp_username']; // Set the username session
         unset($_SESSION['temp_username']); // Remove temporary username session
+        unset($_SESSION['failed_otp_attempts']); // Reset failed attempts
         header("Location: index.php");
         exit();
     } else {
-        $error = "Invalid or expired OTP.";
+        // Increment failed attempts
+        $_SESSION['failed_otp_attempts']++;
+        if ($_SESSION['failed_otp_attempts'] >= 3) {
+            // Too many failed attempts, destroy the session and redirect to login.php
+            session_destroy();
+            header("Location: login.php");
+            exit();
+        }
+        $error = "Invalid or expired OTP. Attempt " . $_SESSION['failed_otp_attempts'] . " of 3.";
     }
 }
 ?>
