@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3307
--- Généré le : mer. 18 déc. 2024 à 01:32
+-- Généré le : jeu. 19 déc. 2024 à 19:13
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -70,15 +70,18 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password_hash` varchar(255) NOT NULL,
-  `salt` varchar(255) NOT NULL
+  `salt` varchar(255) NOT NULL,
+  `otp` varchar(6) DEFAULT NULL COMMENT 'Stores the OTP for login verification',
+  `otp_expiry` datetime DEFAULT NULL COMMENT 'Stores the expiration time of the OTP',
+  `phone` varchar(15) NOT NULL COMMENT 'Stores the phone number for OTP delivery'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password_hash`, `salt`) VALUES
-(1, 'Boss007', '0d6cb9e6d4519877d82be0de088927336b7e1ff2fa1bab8e5e7dde346063c672', '37f71c029df79022b4a287e2dc48cd76');
+INSERT INTO `users` (`id`, `username`, `password_hash`, `salt`, `otp`, `otp_expiry`, `phone`) VALUES
+(1, 'Boss007', '0d6cb9e6d4519877d82be0de088927336b7e1ff2fa1bab8e5e7dde346063c672', '37f71c029df79022b4a287e2dc48cd76', '882870', '2024-12-19 18:41:51', '+15144891031');
 
 --
 -- Index pour les tables déchargées
@@ -110,7 +113,7 @@ ALTER TABLE `tickets`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

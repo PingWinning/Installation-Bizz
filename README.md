@@ -3,7 +3,6 @@
 ![image](https://github.com/user-attachments/assets/8f91a892-f71d-4dd9-aece-ec888f0e87af)
 ![image](https://github.com/user-attachments/assets/2152d188-453d-4458-b4c1-065a8f1aef90)
 
-
 # Professional Installation Services - User Panel
 
 This repository hosts the user panel for **Professional Installation Services**, designed to provide a seamless interface for customers to explore, request, and manage installation services. With a focus on delivering top-tier services across **Laval and Montreal**, this platform ensures your equipment is handled with care and precision.
@@ -38,6 +37,18 @@ To enhance the security of administrator access, we have implemented a robust **
   ADD `otp` VARCHAR(6) DEFAULT NULL COMMENT 'Stores the OTP for login verification',
   ADD `otp_expiry` DATETIME DEFAULT NULL COMMENT 'Stores the expiration time of the OTP';
   ```
+
+---
+## Additional Setup Requirements
+
+### Twilio Integration
+If you're using Twilio for OTP delivery, ensure you have cloned the Twilio PHP SDK into your project. Run the following command in your terminal:
+
+```bash
+git clone https://github.com/twilio/twilio-php.git
+```
+
+Make sure the `twilio-php` directory is included in your project structure, and update your paths accordingly.
 
 ---
 
@@ -186,8 +197,6 @@ We're planning a cinematic ad for our business and are looking for talented vide
 
 ---
 
-Follow me on Instagram: [@dimitar_simeo](https://instagram.com/dimitar_simeo)
-
 ## Author's Message to Contributors
 
 Hey everyone,
@@ -200,10 +209,16 @@ If you join me in this journey and work on this project, you will be remunerated
 For now, I'm focusing on creating a working business while continuing my computer science studies. This project is also a way for me to generate some income to cover my expenses, like gas.
 
 Looking forward to collaborating with you all.
+---
+## Support Us
 
-**Support the Project:**
-[PayPal Donation](https://paypal.me/DimitarSimeonov17?country.x=CA&locale.x=en_US)
-#
+This project represents the foundation of a real-world business venture. Your support will help us enhance and scale the platform.
+
+- **Follow on Instagram**: [@dimitar_simeo](https://instagram.com/dimitar_simeo)
+- **Donations**: [Support via PayPal](https://paypal.me/DimitarSimeonov17?country.x=CA&locale.x=en_US)
+
+Let’s build something amazing together!
+---
 
 ![goof](https://github.com/user-attachments/assets/b97c0eff-9ca0-4925-a577-9a1598df96bd)
 ![buks](https://github.com/user-attachments/assets/13ebb84c-e84b-4aac-90ea-cfa241ac8b14)
