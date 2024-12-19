@@ -6,11 +6,40 @@
 
 # Professional Installation Services - User Panel
 
-This repository contains the user panel for our Professional Installation Services business, offering a seamless interface for customers to explore and request our services. Our business is dedicated to providing top-notch installation services across Laval and Montreal, ensuring that all your equipment is set up with care and precision.
+This repository hosts the user panel for **Professional Installation Services**, designed to provide a seamless interface for customers to explore, request, and manage installation services. With a focus on delivering top-tier services across **Laval and Montreal**, this platform ensures your equipment is handled with care and precision.
 
 - **Added SHA-256** hashing with a salt to secure admin passwords, mitigating vulnerabilities from short passwords.
 - **Salting** provides an additional layer of protection against common attacks like brute force.
 - **Remove** `gen.php` to prevent accidental exposure before public release.
+
+---
+
+## Recent Updates
+
+### OTP Authentication System
+To enhance the security of administrator access, we have implemented a robust **OTP (One-Time Password)** authentication system integrated with Twilio.
+
+- **How It Works**:
+  - After entering a valid username and password, the admin receives an OTP via SMS.
+  - The OTP is valid for **10 minutes** and must be verified to complete the login process.
+
+- **Key Features**:
+  - OTP delivery via Twilio SMS and call.
+  - Expiry mechanism ensures secure and time-limited access.
+  - Unauthorized access to the OTP page is restricted—only users with valid credentials can proceed.
+
+- **Database Alterations**:
+  The `users` table now includes:
+  - `otp`: Stores the generated OTP.
+  - `otp_expiry`: Tracks the expiration time of each OTP.
+
+  ```sql
+  ALTER TABLE `users`
+  ADD `otp` VARCHAR(6) DEFAULT NULL COMMENT 'Stores the OTP for login verification',
+  ADD `otp_expiry` DATETIME DEFAULT NULL COMMENT 'Stores the expiration time of the OTP';
+  ```
+
+---
 
 # Fratres Praesto
 
@@ -44,39 +73,58 @@ I saw an opportunity to make a positive change in the world, and that's why I in
 - **Box Removal & Recycling:** We take care of the tedious task of unpacking and recycling, leaving your space clean and organized.
 - **Moving Services:** Professional moving services are available across Laval and Montreal, with additional options for long-distance moves.
 
+---
 ## Admin Panel Overview
 
 ![image](https://github.com/user-attachments/assets/50f2a191-9351-4e31-a565-a188b69663f7)
 
-The admin panel allows administrators to manage user requests effectively. Key features include:
+The admin panel empowers administrators to manage service requests effectively:. Key features include:
 
 - **User Authentication:** Secure login for administrators with the default username `Boss007` and password `pass`.
+
+- **User Authentication**:
+  - Secure login with password hashing (SHA-256 with salt).
+  - OTP verification for enhanced security.
+- **Ticket Management**:
+  - View, filter, and update user requests.
+  - Pagination for managing large volumes of tickets efficiently.
+- **Detailed Request Handling**:
+  - "See More" functionality for lengthy requests.
+  - Status updates and deletion options for ticket management.
+
 - **Ticket Management:** View, filter, and update the status of user-submitted tickets.
   - **Filters:** Administrators can filter tickets by status (`pending`, `in-progress`, `completed`) and submission date.
   - **Pagination:** The admin panel supports pagination to manage large numbers of tickets, with options to show 5, 10, or 20 tickets per page.
 - **Status Updates:** Administrators can update the status of user requests directly from the admin panel, helping keep track of progress.
-- **Request Details:** For longer user requests, a "See More" button reveals the full content without cluttering the interface.
-- **Deletion of Tickets:** Administrators can delete tickets if necessary, helping maintain a clean and organized database.
+---
 
-## SQL Back-end Overview
+## SQL Database Overview
 
-### Database Structure
+### `tickets` Table
 
-The SQL back-end is built using MariaDB and manages two primary tables:
+| Field Name         | Data Type      | Description                               |
+|--------------------|----------------|-------------------------------------------|
+| `id`               | INT            | Auto-incremented unique identifier.       |
+| `name`             | VARCHAR(255)   | Name of the user.                         |
+| `phone`            | VARCHAR(20)    | User's phone number.                      |
+| `email`            | VARCHAR(255)   | User's email address.                     |
+| `request`          | TEXT           | Details of the service request.           |
+| `status`           | ENUM           | Status of the request (`pending`, etc.).  |
+| `submission_date`  | DATE           | Date when the request was submitted.      |
 
-1. **`tickets`** - This table stores user requests with the following structure:
-    - `id`: Auto-incremented unique identifier for each request.
-    - `name`: Name of the user.
-    - `phone`: User's phone number.
-    - `email`: User's email address.
-    - `request`: The message or service request made by the user.
-    - `status`: The current status of the request (`pending`, `in-progress`, `completed`).
-    - `submission_date`: The date when the request was submitted.
+### `users` Table
 
-2. **`users`** - This table stores user credentials, specifically for admin access:
-    - `id`: Auto-incremented unique identifier for each user.
-    - `username`: The username for the user (default admin is `Boss007`).
-    - `password_hash`: The hashed password for secure authentication (default password is `pass`).
+| Field Name         | Data Type      | Description                               |
+|--------------------|----------------|-------------------------------------------|
+| `id`               | INT            | Auto-incremented unique identifier.       |
+| `username`         | VARCHAR(255)   | Admin username.                           |
+| `password_hash`    | VARCHAR(255)   | Securely hashed admin password.           |
+| `salt`             | VARCHAR(255)   | Random value used for hashing passwords.  |
+| `otp`              | VARCHAR(6)     | Stores the OTP for admin login.           |
+| `otp_expiry`       | DATETIME       | Expiry time for the OTP.                  |
+| `phone`            | VARCHAR(15)    | Admin's phone number for OTP delivery.    |
+
+---
 
 ### How to Use the Database
 
@@ -86,7 +134,6 @@ The SQL back-end is built using MariaDB and manages two primary tables:
 
 2. **Admin Access:**
    - The default admin username is `Boss007`, and the password is `pass`.
-   - The password is stored as a hashed value in the `users` table, ensuring security. For hashing passwords, ensure your PHP environment uses a secure hashing algorithm (e.g., `password_hash()` function).
 
 3. **Storing User Information:**
    - User requests submitted through the contact form on the front-end are stored in the `tickets` table.
@@ -96,6 +143,25 @@ The SQL back-end is built using MariaDB and manages two primary tables:
 
 - **Security:** Contributions should prioritize security, especially when handling user data and authentication processes.
 - **Database Migrations:** If you make changes to the database schema, please include migration scripts and update the SQL dump accordingly.
+
+## Contribution Guidelines
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Description of changes"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request.
 
 ## Technologies Used
 
