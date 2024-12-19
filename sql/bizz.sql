@@ -81,7 +81,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password_hash`, `salt`, `otp`, `otp_expiry`, `phone`) VALUES
-(1, 'Boss007', '0d6cb9e6d4519877d82be0de088927336b7e1ff2fa1bab8e5e7dde346063c672', '37f71c029df79022b4a287e2dc48cd76', '882870', '2024-12-19 18:41:51', '+15144891031');
+(1, 'Boss007', '0d6cb9e6d4519877d82be0de088927336b7e1ff2fa1bab8e5e7dde346063c672', '37f71c029df79022b4a287e2dc48cd76', '882870', '2024-12-19 18:41:51', '+15141231234');
 
 --
 -- Index pour les tables déchargées
