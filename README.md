@@ -14,7 +14,7 @@ This repository hosts the user panel for **Professional Installation Services**,
 ---
 
 ## Recent Updates
-![otp-iphone](https://github.com/user-attachments/assets/d807a5ba-b934-4441-9be3-1dfe97566012)
+＜img src="https://github.com/user-attachments/assets/d807a5ba-b934-4441-9be3-1dfe97566012" width="500" height="300"＞
 ![image](https://github.com/user-attachments/assets/f1a5113c-ef55-482a-8942-777911ac1c0c)
 
 ### OTP Authentication System
