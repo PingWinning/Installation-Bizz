@@ -15,7 +15,13 @@ This repository hosts the user panel for **Professional Installation Services**,
 
 ## Recent Updates
 <img src="https://github.com/user-attachments/assets/d807a5ba-b934-4441-9be3-1dfe97566012" alt="iPhone OTP notification" width="375" height="auto">
-<img src="https://github.com/user-attachments/assets/f1a5113c-ef55-482a-8942-777911ac1c0c" alt="iPhone OTP notification" width="375" height="750">
+<img src="https://github.com/user-attachments/assets/9f0ce961-fb6d-4fe8-9ab4-805a81bda8e7" alt="OTP first try">
+<img src="https://github.com/user-attachments/assets/a92f3d6d-c968-4c6c-b24e-b54c02ca8359" alt="Invalid or expired OTP. Attempt 1 of 3.">
+<img src="https://github.com/user-attachments/assets/68c09720-fa7b-4b72-89fe-501b94a48936" alt="Invalid or expired OTP. Attempt 2 of 3.">
+
+![image](https://github.com/user-attachments/assets/9f0ce961-fb6d-4fe8-9ab4-805a81bda8e7)
+![image](https://github.com/user-attachments/assets/a92f3d6d-c968-4c6c-b24e-b54c02ca8359)
+![image](https://github.com/user-attachments/assets/68c09720-fa7b-4b72-89fe-501b94a48936)
 
 ### OTP Authentication System
 To enhance the security of administrator access, we have implemented a robust **OTP (One-Time Password)** authentication system integrated with Twilio.
