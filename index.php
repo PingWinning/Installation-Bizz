@@ -257,7 +257,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="mt-16 bg-yellow-500 text-gray-900 rounded-lg p-8">
             <h2 class="text-3xl font-bold text-center mb-6">Notre Histoire, Votre Confiance</h2>
             <p class="text-lg leading-8 text-center">
-                Imaginez deux frères, un atelier, et une passion inébranlable pour l’art de l’assemblage. Après des années à travailler pour de grandes entreprises, nous avons décidé de créer une entreprise différente,<strong>une entreprise qui place ses clients au cœur de chaque mission.</strong>
+                Imaginez deux frères, un atelier, et une passion pour l’art de l’assemblage. Après des années à travailler pour de grandes entreprises, nous avons décidé de créer une entreprise différente,<strong>une entreprise qui place ses clients au cœur de chaque mission.</strong>
             </p>
             <p class="text-lg leading-8 text-center mt-4">
                 Contrairement aux grandes entreprises souvent pressées et débordées, nous prenons le temps de bien faire les choses. Chaque vis que nous serrons et chaque meuble que nous montons sont des symboles de la confiance que vous nous accordez.
@@ -371,6 +371,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <div class="text-center">
                     <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500 transition duration-300" type="submit">Envoyer</button>
+                    <p id="termes" class="text-sm text-gray-400 mt-4">
+                        En cliquant sur "Envoyer", vous acceptez nos 
+                        <a href="terms-et-conditions.html" class="text-blue-500 hover:underline">termes et conditions</a>.
+                    </p>
                 </div>
             </form>
         </div>
