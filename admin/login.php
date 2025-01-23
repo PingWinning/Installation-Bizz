@@ -36,9 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $updateStmt->close();
 
             // Send OTP via Twilio
-            $sid = 'XXXXXXXXXXXXXXXXXXXXXXXXx'; // Replace with your Twilio Account SID
-            $authToken = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX'; // Replace with your Twilio Auth Token
-            $twilioNumber = '+1231231425'; // Replace with your Twilio phone number
+            $sid = 'XXXXXXXXXXXXXXXXXXXXXXXXX'; // Replace with your Twilio Account SID
+            $authToken = 'XXXXXXXXXXXXXXXXXXXXXXXXX'; // Replace with your Twilio Auth Token
+            $twilioNumber = '+XXXXXXXXXXXXXXXXXXXXXXXXX'; // Replace with your Twilio phone number
             $client = new Client($sid, $authToken);
 
             try {

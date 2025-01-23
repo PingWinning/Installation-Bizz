@@ -172,6 +172,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <i class="fas fa-tv"></i>&nbsp;Installation de Téléviseurs
                 </h3>
                 <p id="service-2-desc">Notre équipe installe en toute sécurité votre téléviseur intelligent sur n'importe quel mur, optimisant ainsi votre expérience de visionnage. Offrez-vous un espace moderne et élégant pour une expérience visuelle améliorée.</p>
+                <p id="service-indispo" class="text-sm mt-2 text-center" style="color: red;">Service actuellement indisponible</p>        
             </div>
             <div class="bg-gray-800 p-5 rounded-lg">
                 <h3 id="service-3-title" class="text-xl font-semibold mb-3">

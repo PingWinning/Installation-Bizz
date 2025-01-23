@@ -19,7 +19,8 @@ document.getElementById('switch').addEventListener('change', function() {
         
         document.getElementById('service-2-title').innerHTML = '<i class="fas fa-tv"></i>&nbsp;TV Installation';
         document.getElementById('service-2-desc').textContent = "Our team safely mounts your smart TV on any wall, optimizing your viewing experience. Create a modern and elegant space while enhancing your viewing comfort.";
-        
+        document.getElementById('service-indispo').textContent = "Service currently unavailable";
+
         document.getElementById('service-3-title').innerHTML = '<i class="fas fa-couch"></i>&nbsp;Sofa Setup';
         document.getElementById('service-3-desc').textContent = "We connect and configure modular sofas to perfectly fit your space. We can also advise you on the selection and arrangement of sofas and sectionals for a practical and elegant interior.";
         
@@ -73,7 +74,8 @@ document.getElementById('switch').addEventListener('change', function() {
         
         document.getElementById('service-2-title').innerHTML = '<i class="fas fa-tv"></i>&nbsp;Installation de Téléviseurs';
         document.getElementById('service-2-desc').textContent = "Notre équipe installe en toute sécurité votre téléviseur intelligent sur n'importe quel mur, optimisant ainsi votre expérience de visionnage. Offrez-vous un espace moderne et élégant pour une expérience visuelle améliorée.";
-        
+        document.getElementById('service-indispo').textContent = "Service actuellement indisponible";
+
         document.getElementById('service-3-title').innerHTML = '<i class="fas fa-couch"></i>&nbsp;Branchement de Canapés';
         document.getElementById('service-3-desc').textContent = "Nous connectons et configurons les canapés modulaires pour qu'ils s'intègrent parfaitement à votre espace. Nous pouvons également vous conseiller sur le choix et l'agencement des canapés et sectionnels, pour un intérieur à la fois pratique et élégant.";
         
