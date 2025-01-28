@@ -146,7 +146,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="flex items-center space-x-6">
             <!-- Referral Program Link -->
             <div id="parrainage">
-                <a href="parrainage.thml" class="text-white bg-blue-500 hover:bg-blue-400 px-4 py-2 rounded-md font-medium transition-all">
+                <a href="parrainage.html" class="text-white bg-blue-500 hover:bg-blue-400 px-4 py-2 rounded-md font-medium transition-all">
                     Parrainez et Gagnez 200$
                 </a>
             </div>
