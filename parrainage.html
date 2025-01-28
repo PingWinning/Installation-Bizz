@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
-<body class="bg-gray-900 text-gray-100">
-    <header class="bg-gray-800 p-5">
+<body class="bg-gray-800 text-gray-100">
+    <header class="bg-gray-900 p-5">
         <nav class="flex items-center justify-between">
             <div class="flex-grow text-center">
                 <h1 class="text-4xl font-bold text-white">
@@ -45,11 +45,13 @@
             <h2 class="text-3xl font-bold mb-8 text-center">Nos Services et Tarifs</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card: Petit Déménagement -->
-                <div class="bg-gray-800 p-8 rounded-lg shadow-lg text-center border border-gray-700">
+                <div class="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-700">
                     <i class="fas fa-truck-moving text-4xl text-blue-400 mb-4"></i>
                     <h3 class="text-2xl font-semibold mb-4">Petit Déménagement</h3>
                     <p class="mb-4 text-lg text-gray-300">Idéal pour les appartements ou petits logements.</p>
-                    <p class="text-2xl font-bold text-green-400 mb-4">1200$</p>
+                    <p class="text-2xl font-bold text-green-400 mb-4">
+                        1200$ <br><del class="text-red-400">1700$</del>
+                    </p>
                     <ul class="text-lg text-gray-400 mb-6 space-y-2 text-left">
                         <li>✔️ Transport courte distance sécurisé</li>
                         <li>✔️ Planification détaillée</li>
@@ -63,11 +65,13 @@
                 </div>
 
                 <!-- Card: Gros Déménagement -->
-                <div class="bg-gray-800 p-8 rounded-lg shadow-lg text-center border border-gray-700">
+                <div class="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-700">
                     <i class="fas fa-truck text-4xl text-blue-400 mb-4"></i>
                     <h3 class="text-2xl font-semibold mb-4">Gros Déménagement</h3>
                     <p class="mb-4 text-lg text-gray-300">Parfait pour les grandes maisons ou gros volumes.</p>
-                    <p class="text-2xl font-bold text-green-400 mb-4">2000$</p>
+                    <p class="text-2xl font-bold text-green-400 mb-4">
+                        2000$ <br><del class="text-red-400">2500$</del>
+                    </p>
                     <ul class="text-lg text-gray-400 mb-6 space-y-2 text-left">
                         <li>✔️ Transport courte distance sécurisé</li>
                         <li>✔️ Planification détaillée</li>
@@ -81,7 +85,7 @@
                 </div>
 
                 <!-- Card: Déménagement Hors Montréal/Laval -->
-                <div class="bg-gray-800 p-8 rounded-lg shadow-lg text-center border border-gray-700">
+                <div class="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-700">
                     <i class="fas fa-truck-loading text-4xl text-blue-400 mb-4"></i>
                     <h3 class="text-2xl font-semibold mb-4">Hors Montréal/Laval</h3>
                     <p class="mb-4 text-lg text-gray-300">Inclut les déménagements longue distance.</p>
@@ -103,7 +107,55 @@
         </section>
     </main>
 
-    <footer class="bg-gray-800 p-8 text-white">
+    <section id="affiliate-program" class="mb-8">
+        <div class="bg-gray-900 p-10 rounded-lg shadow-lg text-center border border-gray-700">
+            <h2 class="text-4xl font-bold text-center mb-8 text-green-400">Devenez un Partenaire Affilié</h2>
+            <p class="text-lg text-gray-300 space-y-4 text-left mx-auto max-w-3xl">
+                Rejoignez notre programme de partenariat et gagnez des commissions en recommandant nos services. 
+                C'est simple, transparent et conçu pour vous récompenser.
+            </p><br>
+            <h3 class="text-2xl font-semibold mb-6 text-white">Comment ça fonctionne ?</h3>
+            <ul class="text-lg text-gray-300 space-y-4 text-left mx-auto max-w-3xl">
+                <li>✔️ <strong>Référer un client :</strong> Recommandez nos services en leur demandant de signer notre contrat.</li>
+                <li>✔️ <strong>Signer le contrat :</strong> Aidez vos clients à remplir et signer notre contrat officiel.</li>
+                <li>✔️ <strong>Paiement et Réservation :</strong> Une fois le contrat signé et le paiement reçu, le client peut réserver une date pour son déménagement, idéalement en juin.</li>
+                <li>✔️ <strong>Commission :</strong> Vous recevrez une commission équivalente à <span class="font-bold text-green-500">10%</span> du montant total selon votre moyen de paiement préféré (eTransfer ou PayPal).</li>
+                <li>✔️ <strong>Bonus :</strong> Pour chaque <span class="font-bold text-yellow-400">10ème client</span> signé et payé, un bonus spécial sera appliqué !</li>
+                <li>✔️ <strong>Frais supplémentaires :</strong> Informez le client qu'il y aura des frais d'essence, d'emballage/déballage et de recyclage Eco+ applicables après le déménagement.</li>
+            </ul>
+    
+            <!-- Formulaire d'inscription -->
+            <div class="mt-10">
+                <h3 class="text-2xl font-semibold text-white mb-4">Recevez le contrat et les instructions</h3>
+                <form id="affiliate-form" class="flex flex-col justify-center items-center space-y-4 w-full max-w-md mx-auto">
+                    <input type="email" id="email" name="email" placeholder="Entrez votre email" 
+                        class="w-full p-3 bg-gray-800 text-gray-200 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-400 transition duration-200 ease-in-out">
+                    <button type="submit" 
+                        class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-200 ease-in-out">
+                        Devenir un Partenaire
+                    </button>
+                </form>
+                <p id="confirmation-message" class="text-green-400 mt-4 hidden">Merci ! Nous vous enverrons les détails sous peu.</p>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById("affiliate-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var emailInput = document.getElementById("email");
+            var confirmationMessage = document.getElementById("confirmation-message");
+    
+            if (emailInput.value.trim() === "") {
+                alert("Veuillez entrer un email valide.");
+            } else {
+                confirmationMessage.classList.remove("hidden");
+                emailInput.value = ""; // Réinitialise le champ après soumission
+            }
+        });
+    </script>    
+
+    <footer class="bg-gray-900 p-8 text-white">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Business Info -->
             <div>
