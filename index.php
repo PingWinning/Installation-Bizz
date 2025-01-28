@@ -83,6 +83,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickFix Brothers | Handyman Services in Montreal & Laval</title>
+    <meta name="description" content="Service de déménagement professionnel à Montréal et Laval. Réservez dès maintenant pour juin. Aide rapide et efficace pour déménagement résidentiel ou commercial, avec montage et démontage de meubles inclus.">
+    <meta name="keywords" content="Déménagement Montréal, Déménagement Laval, Service de déménagement, Réservation déménagement juin, Aide au déménagement, Handyman déménagement, Petit déménagement, Prix abordables déménagement">
     <meta name="description" content="QuickFix Brothers offers reliable handyman services in Montreal and Laval, including furniture assembly, TV installation, sofa setup, appliance installation, snow removal, and more.">
     <meta name="keywords" content="
         handyman Montreal, Laval handyman, 
@@ -140,6 +142,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p class="text-gray-400 mt-2" id="subtitle">Votre partenaire de confiance pour une installation sans tracas</p>
         </div>
         <div class="flex items-center">
+        <a href="terms-and-conditions.html" class="mr-2">FAQ</a><br>
             <span class="mr-2 text-white">FR</span>
             <div class="switch-container">
                 <input type="checkbox" id="switch" class="switch-input">
