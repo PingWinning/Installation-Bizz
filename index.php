@@ -136,23 +136,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body class="bg-gray-900 text-white">
 
     <!-- Navbar with Language Toggle -->
+    <!-- Navbar with Language Toggle and Referral Program -->
+   <!-- Navbar with Language Toggle and Referral Program -->
     <nav class="bg-gray-800 p-5 flex justify-between items-center">
         <div>
             <h1 class="text-3xl font-bold" id="main-title">Services Professionnels d'Installation</h1>
             <p class="text-gray-400 mt-2" id="subtitle">Votre partenaire de confiance pour une installation sans tracas</p>
         </div>
-        <div class="flex items-center">
-        <a href="terms-and-conditions.html" class="mr-2">FAQ</a><br>
-            <span class="mr-2 text-white">FR</span>
-            <div class="switch-container">
-                <input type="checkbox" id="switch" class="switch-input">
-                <label for="switch" class="switch-label">
-                    <span class="switch-circle"></span>
-                </label>
+        <div class="flex items-center space-x-6">
+            <!-- Referral Program Link -->
+            <div id="parrainage">
+                <a href="parrainage.thml" class="text-white bg-blue-500 hover:bg-blue-400 px-4 py-2 rounded-md font-medium transition-all">
+                    Parrainez et Gagnez 200$
+                </a>
             </div>
-            <span class="ml-2 text-white">EN</span>
+            <!-- Language Toggle -->
+            <div class="flex items-center">
+                <span class="mr-2 text-white">FR</span>
+                <div class="switch-container">
+                    <input type="checkbox" id="switch" class="switch-input">
+                    <label for="switch" class="switch-label">
+                        <span class="switch-circle"></span>
+                    </label>
+                </div>
+                <span class="ml-2 text-white">EN</span>
+            </div>
         </div>
     </nav>
+
+
 
     <!-- Services Section -->
     <section class="p-6">

@@ -12,6 +12,7 @@ document.getElementById('switch').addEventListener('change', function() {
         document.getElementById('services-title').innerHTML = '<i class="fas fa-tools"></i>&nbsp;Our Services';
         document.getElementById('contact-title').textContent = "Contact Us";
         document.getElementById('termes').innerHTML = 'By clicking "Send," you agree to our <a href="terms-and-conditions.html" class="text-blue-500 hover:underline">terms and conditions</a>.';
+        document.getElementById('parrainage').innerHTML = '<a href="referral.thml" class="text-white bg-blue-500 hover:bg-blue-400 px-4 py-2 rounded-md font-medium transition-all">Refer & Earn $200</a>';
 
         // Update service titles and descriptions with icons
         document.getElementById('service-1-title').innerHTML = '<i class="fas fa-couch"></i>&nbsp;Furniture/Patio Assembly';
@@ -67,6 +68,7 @@ document.getElementById('switch').addEventListener('change', function() {
         document.getElementById('services-title').innerHTML = '<i class="fas fa-tools"></i>&nbsp;Nos Services';
         document.getElementById('contact-title').textContent = "Contactez-Nous";
         document.getElementById('termes').innerHTML = 'En cliquant sur "Envoyer", vous acceptez nos <a href="terms-et-conditions.html" class="text-blue-500 hover:underline">termes et conditions</a>.';
+        document.getElementById('parrainage').innerHTML = '<a href="parrainage.thml" class="text-white bg-blue-500 hover:bg-blue-400 px-4 py-2 rounded-md font-medium transition-all">Parrainez & Gagnez 200$</a>';
 
         // Update service titles and descriptions with icons
         document.getElementById('service-1-title').innerHTML = '<i class="fas fa-couch"></i>&nbsp;Assemblage de Meubles/Patio';
