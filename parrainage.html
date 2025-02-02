@@ -227,6 +227,17 @@
 </section>
 
 <script>
+    document.querySelectorAll("details").forEach((detail) => {
+        detail.addEventListener("click", function () {
+            document.querySelectorAll("details").forEach((otherDetail) => {
+                if (otherDetail !== detail) {
+                    otherDetail.removeAttribute("open");
+                }
+            });
+        });
+    });
+
+
     document.getElementById("affiliate-form").addEventListener("submit", function(event) {
         event.preventDefault();
         var emailInput = document.getElementById("email");
