@@ -136,20 +136,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body class="bg-gray-900 text-white">
 
     <!-- Navbar with Language Toggle -->
-    <!-- Navbar with Language Toggle and Referral Program -->
-   <!-- Navbar with Language Toggle and Referral Program -->
-    <nav class="bg-gray-800 p-5 flex justify-between items-center">
-        <div>
-            <h1 class="text-3xl font-bold" id="main-title">Services Professionnels d'Installation</h1>
-            <p class="text-gray-400 mt-2" id="subtitle">Votre partenaire de confiance pour une installation sans tracas</p>
+    <nav class="bg-gray-800 p-5 flex flex-wrap md:flex-nowrap justify-between items-center">
+        <div class="w-full md:w-auto text-center md:text-left">
+            <h1 class="text-2xl md:text-3xl font-bold" id="main-title">Services Professionnels d'Installation</h1>
+            <p class="text-gray-400 mt-2 text-sm md:text-base" id="subtitle">
+                Votre partenaire de confiance pour une installation sans tracas
+            </p>
         </div>
-        <div class="flex items-center space-x-6">
+        
+        <div class="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-6 w-full md:w-auto mt-4 md:mt-0">
             <!-- Referral Program Link -->
-            <div id="parrainage">
-                <a href="parrainage.html" class="text-white bg-blue-500 hover:bg-blue-400 px-4 py-2 rounded-md font-medium transition-all">
+            <div id="parrainage" class="w-full md:w-auto text-center">
+                <a href="parrainage.html" class="text-white bg-blue-500 hover:bg-blue-400 px-6 py-2 text-sm md:text-base rounded-md font-medium transition-all block w-full md:w-auto">
                     Parrainez et Gagnez 200$
                 </a>
             </div>
+
             <!-- Language Toggle -->
             <div class="flex items-center">
                 <span class="mr-2 text-white">FR</span>
