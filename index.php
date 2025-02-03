@@ -166,8 +166,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </nav>
 
-
-
     <!-- Services Section -->
     <section class="p-6">
     <div class="container mx-auto">
