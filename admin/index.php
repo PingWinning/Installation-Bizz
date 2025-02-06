@@ -253,6 +253,20 @@ $totalPages = ceil($totalTickets / $usersPerPage);
             };
             xhr.send("ticket_id=" + ticketId + "&status=" + status);
         }
+
+        function checkSession() {
+        fetch('check_session.php')
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === "expired") {
+                    window.location.href = 'login.php?session_expired=1'; // Redirect without alert
+                }
+            })
+            .catch(error => console.error('Session check failed:', error));
+        }
+
+        // Check session status every 60 seconds (1 minute)
+        setInterval(checkSession, 60000);
     </script>
 
 </body>

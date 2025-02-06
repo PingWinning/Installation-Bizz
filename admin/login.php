@@ -116,6 +116,11 @@ $conn->close();
             <?php if (!empty($error)): ?>
                 <div class="mb-4 text-red-400 text-sm text-center"><?php echo $error; ?></div>
             <?php endif; ?>
+            <?php
+                if (isset($_GET['session_expired']) && $_GET['session_expired'] == 1) {
+                    echo "<p style='color: red; text-align: center;'>Your session has expired due to inactivity. Please login again.</p>";
+                }
+            ?>
             
             <!-- Username Field -->
             <div class="mb-6">
