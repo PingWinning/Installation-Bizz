@@ -51,6 +51,7 @@
                     <span class="text-green-400 font-semibold">services handyman</span> pour une solution clé en main qui révolutionne votre quotidien.
                 </p>                       
             </div>
+    
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card: Petit Déménagement -->
                 <div class="bg-gray-900 p-8 rounded-3xl shadow-lg text-center border border-gray-700 transform transition-transform duration-300 hover:scale-105">
@@ -61,23 +62,32 @@
                         <span class="mr-2 text-5xl font-extrabold">$1200</span>
                         <span class="text-gray-500 dark:text-gray-400"><del>$1700</del></span>
                     </div>
-                    <ul class="text-lg text-gray-400 mb-6 space-y-2 text-left">
-                        <li>✅ Transport courte distance sécurisé</li>
+    
+                    <!-- Read More Section -->
+                    <ul class="text-lg text-gray-400 mb-6 space-y-2 text-left max-h-40 overflow-hidden md:max-h-full transition-all duration-300 ease-in-out" id="details-1">
                         <li>✅ Planification détaillée</li>
+                        <li>✅ Transport sécurisé (Montréal/Laval)</li>
                         <li>✅ Transport professionnel</li>
                         <li>✅ Protection complète des meubles (plastiques, rembourrages)</li>
                         <li>✅ Protection meubles, sofas, matelas (plastiques, sacs spécialisés)</li>
                         <li>✅ Emballage des objets fragiles (papier bulle, cartons)</li>
                         <li>✅ Sangles et fixation sécurisée dans le camion</li>
-                        <li>❌ Service disponible uniquement pour les petits volumes</li>
-                        <li>❌ Frais supplémentaires pour zones éloignées</li>
-                        <li>❌ Les coûts d’essence ne sont pas inclus dans le prix. Cela est payable séparément après le service.</li>
-                        <li>❌ Les frais de recyclage et d’emballage (items, électroménagers, sofas, meubles, etc.) sont également payables séparément après le service.</li>
-
+                        <li>❌ <strong>Service limité aux petits volumes</strong> : Convient aux studios, chambres, bureaux et déménagements légers.</li>
+                        <li>❌ <strong>Frais supplémentaires pour zones éloignées</strong> : Tarification selon la distance.</li>
+                        <li>❌ <strong>Essence non incluse</strong> : Facturation séparée selon le nombre de kilomètres parcourus.</li>
+                        <li>❌ <strong>Frais de recyclage et d’emballage</strong> : Les frais de recyclage et d’emballage sont payables séparément après le service.</li>
+                        <li>✅ <strong>Services complémentaires</strong> : Assemblage de meubles, installation de sofa-sectionnel, installation d’électroménagers, réparations domestiques sur demande. 
+                            <a style="color: #1e90ff;  text-decoration: underline; font-weight: bold;" href="index.php" target="_blank">En savoir plus.</a>
+                        </li>  
                     </ul>
-                    <p class="mr-2 text-4xl font-extrabold text-green-500">Commission : 120$</p>
+    
+                    <!-- Toggle Button for Small Screens -->
+                    <button class="text-green-400 font-semibold mt-2 focus:outline-none md:hidden" onclick="toggleDetails('details-1', this)">Lire plus</button>
+    
+                    <!-- Commission (Always Visible) -->
+                    <p class="mr-2 text-4xl font-extrabold text-green-500 mt-4">Commission : 120$</p>
                 </div>
-
+    
                 <!-- Card: Gros Déménagement -->
                 <div class="bg-gray-900 p-8 rounded-3xl shadow-lg text-center border border-gray-700 transform transition-transform duration-300 hover:scale-105">
                     <i class="fas fa-truck text-6xl text-green-400 mb-4"></i>
@@ -87,23 +97,29 @@
                         <span class="mr-2 text-5xl font-extrabold">$2000</span>
                         <span class="text-gray-500 dark:text-gray-400"><del>$2500</del></span>
                     </div>
-                    <ul class="text-lg text-gray-400 mb-6 space-y-2 text-left">
-                        <li>✅ Transport courte distance sécurisé</li>
+    
+                    <ul class="text-lg text-gray-400 mb-6 space-y-2 text-left max-h-40 overflow-hidden md:max-h-full transition-all duration-300 ease-in-out" id="details-2">
                         <li>✅ Planification détaillée</li>
+                        <li>✅ Transport sécurisé (Montréal/Laval)</li>
                         <li>✅ Transport professionnel</li>
                         <li>✅ Protection complète des meubles (plastiques, rembourrages)</li>
                         <li>✅ Protection meubles, sofas, matelas (plastiques, sacs spécialisés)</li>
                         <li>✅ Emballage des objets fragiles (papier bulle, cartons)</li>
                         <li>✅ Sangles et fixation sécurisée dans le camion</li>
-                        <li>✅ Service disponible pour les grands volumes</li>
-                        <li>❌ Frais supplémentaires pour zones éloignées</li>
-                        <li>❌ Les coûts d’essence ne sont pas inclus dans le prix. Cela est payable séparément après le service.</li>
-                        <li>❌ Les frais de recyclage et d’emballage</span> (items, électroménagers, sofas, meubles, etc.) sont également payables séparément après le service.</li>
-
+                        <li>✅ <strong>Service disponible pour les grands volumes</strong> : Convient aux grandes maisons, appartements et bureaux.</li>
+                        <li>❌ <strong>Frais supplémentaires pour zones éloignées</strong> : Tarification selon la distance.</li>
+                        <li>❌ <strong>Essence non incluse</strong> : Facturation séparée selon le nombre de kilomètres parcourus.</li>
+                        <li>❌ <strong>Frais de recyclage et d’emballage</strong> : Les frais de recyclage et d’emballage sont payables séparément après le service.</li>
+                        <li>✅ <strong>Services complémentaires</strong> : Assemblage de meubles, installation de sofa-sectionnel, installation d’électroménagers, réparations domestiques sur demande. 
+                            <a style="color: #1e90ff;  text-decoration: underline; font-weight: bold;" href="index.php" target="_blank">En savoir plus.</a>
+                        </li>  
                     </ul>
-                    <p class="mr-2 text-4xl font-extrabold text-green-500">Commission : 200$</p>
+    
+                    <button class="text-green-400 font-semibold mt-2 focus:outline-none md:hidden" onclick="toggleDetails('details-2', this)">Lire plus</button>
+    
+                    <p class="mr-2 text-4xl font-extrabold text-green-500 mt-4">Commission : 200$</p>
                 </div>
-
+    
                 <!-- Card: Déménagement Hors Montréal/Laval -->
                 <div class="bg-gray-900 p-8 rounded-3xl shadow-lg text-center border border-gray-700 transform transition-transform duration-300 hover:scale-105">
                     <i class="fas fa-truck-loading text-6xl text-green-400 mb-4"></i>
@@ -113,23 +129,45 @@
                         <span class="mr-2 text-5xl font-extrabold">$2800</span>
                         <span class="text-gray-500 dark:text-gray-400"><del>$3300</del></span>
                     </div>
-                    <ul class="text-lg text-gray-400 mb-6 space-y-2 text-left">
-                        <li>✅ Transport longue distance sécurisé</li>
+    
+                    <ul class="text-lg text-gray-400 mb-6 space-y-2 text-left max-h-40 overflow-hidden md:max-h-full transition-all duration-300 ease-in-out" id="details-3">
                         <li>✅ Planification détaillée</li>
-                        <li>✅ Transport professionnel</li>
+                        <li>✅ <strong>Transport sécurisé (longue distance)</strong> : Idéal pour les déménagements hors de Montréal et Laval.</li>
+                        <li>✅ <strong>Transport professionnel (Longueuil, Brossard, Québec, Trois-Rivières et autres)</strong> : Véhicules adaptés et équipe expérimentée.</li>
                         <li>✅ Protection complète des meubles (plastiques, rembourrages)</li>
                         <li>✅ Protection meubles, sofas, matelas (plastiques, sacs spécialisés)</li>
                         <li>✅ Emballage des objets fragiles (papier bulle, cartons)</li>
                         <li>✅ Sangles et fixation sécurisée dans le camion</li>
-                        <li>✅ Service disponible pour les grands volumes et les petits volumes</li>
-                        <li>❌ Les coûts d’essence ne sont pas inclus dans le prix. Cela est payable séparément après le service.</li>
-                        <li>❌ Les frais de recyclage et d’emballage (items, électroménagers, sofas, meubles, etc.) sont également payables séparément après le service.</li>
+                        <li>✅ <strong>Service disponible pour les grands et petits volumes</strong> : Convient aux maisons, appartements et bureaux.</li>
+                        <li>❌ <strong>Essence non incluse</strong> : Facturation séparée selon le nombre de kilomètres parcourus.</li>
+                        <li>❌ <strong>Frais de recyclage et d’emballage</strong> : Les frais de recyclage et d’emballage sont payables séparément après le service.</li>
+                        <li>✅ <strong>Services complémentaires</strong> : Assemblage de meubles, installation de sofa-sectionnel, installation d’électroménagers, réparations domestiques sur demande. 
+                            <a style="color: #1e90ff;  text-decoration: underline; font-weight: bold;" href="index.php" target="_blank">En savoir plus.</a>
+                        </li>  
                     </ul>
-                    <p class="mr-2 text-4xl font-extrabold text-green-500">Commission : 250$</p>
+                    
+                    <button class="text-green-400 font-semibold mt-2 focus:outline-none md:hidden" onclick="toggleDetails('details-3', this)">Lire plus</button>
+                    
+                    <p class="mr-2 text-4xl font-extrabold text-green-500 mt-4">Commission : 250$</p>
                 </div>
             </div>
         </section>
     </main>
+    
+    <script>
+        function toggleDetails(id, btn) {
+            let details = document.getElementById(id);
+            if (details.classList.contains('max-h-40')) {
+                details.classList.remove('max-h-40');
+                details.classList.add('max-h-full');
+                btn.innerText = "Lire moins";
+            } else {
+                details.classList.add('max-h-40');
+                details.classList.remove('max-h-full');
+                btn.innerText = "Lire plus";
+            }
+        }
+    </script>      
 
     <section id="affiliate-program" class="mb-8">
     <div class="bg-gray-900 p-10 rounded-lg shadow-lg text-center border border-gray-700">
