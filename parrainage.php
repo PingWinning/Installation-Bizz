@@ -1,40 +1,56 @@
 <?php
+session_set_cookie_params([
+    'lifetime' => 0,
+    'path' => '/',
+    'domain' => '',
+    'secure' => isset($_SERVER['HTTPS']),
+    'httponly' => true,
+    'samesite' => 'Strict'
+]);
 session_start();
 include('includes/config.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (!isset($_SESSION['last_submit']) || time() - $_SESSION['last_submit'] > 10) {
+        $_SESSION['last_submit'] = time();
+    } else {
+        $_SESSION['error'] = "Veuillez attendre quelques secondes avant de soumettre à nouveau.";
+        header("Location: parrainage.php");
+        exit();
+    }
+
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-    
+
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $_SESSION['error'] = "L'adresse e-mail fournie est invalide. Veuillez entrer une adresse correcte.";
     } else {
         $submission_date = date("Y-m-d");
         $status = 'pending';
-        
-        // Check if the email already exists securely
+
         $check_stmt = $conn->prepare("SELECT email FROM affiliates WHERE email = ?");
         $check_stmt->bind_param("s", $email);
         $check_stmt->execute();
         $check_stmt->store_result();
-        
+
         if ($check_stmt->num_rows > 0) {
             $_SESSION['error'] = "Cette adresse e-mail est déjà enregistrée dans notre système.";
         } else {
             $stmt = $conn->prepare("INSERT INTO affiliates (email, submission_date, status) VALUES (?, ?, ?)");
             $stmt->bind_param("sss", $email, $submission_date, $status);
-            
+
             if ($stmt->execute()) {
                 $_SESSION['success'] = "Félicitations ! Votre inscription a été enregistrée avec succès. Vous recevrez toutes les informations nécessaires dans un délai de 2 à 5 jours ouvrables pour commencer à générer des revenus avec nous en tant qu'affilié. Merci de votre confiance !";
             } else {
                 $_SESSION['error'] = "Une erreur s'est produite lors de l'inscription. Veuillez réessayer plus tard.";
+                error_log("MySQL Error: " . $stmt->error);
             }
-            
             $stmt->close();
         }
-        
+
         $check_stmt->close();
         $conn->close();
     }
+
     header("Location: parrainage.php");
     exit();
 }
