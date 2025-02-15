@@ -16,7 +16,7 @@ document.getElementById('switch').addEventListener('change', function() {
         document.getElementById('services-title').innerHTML = '<i class="fas fa-tools"></i>&nbsp;Our Services';
         document.getElementById('contact-title').textContent = "Contact Us";
         document.getElementById('termes').innerHTML = 'By clicking "Send," you agree to our <a href="terms-and-conditions.html" class="text-blue-500 hover:underline">terms and conditions</a>.';
-        document.getElementById('parrainage').innerHTML = '<a href="parrainage.html" class="font-bold text-white bg-green-700 hover:bg-green-400 px-6 py-2 text-sm md:text-base rounded-3xl font-medium transition-all block w-full md:w-auto"><strong>Refer & Earn $200</strong></a>';
+        document.getElementById('parrainage').innerHTML = '<a href="parrainage.php" class="font-bold text-white bg-green-700 hover:bg-green-400 px-6 py-2 text-sm md:text-base rounded-3xl font-medium transition-all block w-full md:w-auto"><strong>Refer & Earn $200</strong></a>';
 
         // Update service titles and descriptions with icons
         document.getElementById('service-1-title').innerHTML = '<i class="fas fa-couch"></i>&nbsp;Furniture/Patio Assembly';
@@ -74,7 +74,7 @@ document.getElementById('switch').addEventListener('change', function() {
         document.getElementById('services-title').innerHTML = '<i class="fas fa-tools"></i>&nbsp;Nos Services';
         document.getElementById('contact-title').textContent = "Contactez-Nous";
         document.getElementById('termes').innerHTML = 'En cliquant sur "Envoyer", vous acceptez nos <a href="terms-et-conditions.html" class="text-blue-500 hover:underline">termes et conditions</a>.';
-        document.getElementById('parrainage').innerHTML = '<a href="parrainage.html" class="font-bold text-white bg-green-700 hover:bg-green-400 px-6 py-2 text-sm md:text-base rounded-3xl font-medium transition-all block w-full md:w-auto"><strong>Parrainez & Gagnez 200$</strong></a>';
+        document.getElementById('parrainage').innerHTML = '<a href="parrainage.php" class="font-bold text-white bg-green-700 hover:bg-green-400 px-6 py-2 text-sm md:text-base rounded-3xl font-medium transition-all block w-full md:w-auto"><strong>Parrainez & Gagnez 200$</strong></a>';
 
         // Update service titles and descriptions with icons
         document.getElementById('service-1-title').innerHTML = '<i class="fas fa-couch"></i>&nbsp;Assemblage de Meubles/Patio';
