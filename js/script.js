@@ -5,7 +5,7 @@ document.getElementById('switch').addEventListener('change', function() {
     const warnEn = document.getElementById('warrning-en');
 
     if (this.checked) {
-        // Switch to English
+        // Switch to English // TO DO ... Testing git commit
         frDescription.classList.add('hidden');
         enDescription.classList.remove('hidden');
         warnFr.classList.add('hidden');
