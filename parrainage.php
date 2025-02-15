@@ -407,6 +407,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 modal.classList.remove("hidden");
             <?php endif; ?>
         };
+
+        document.querySelectorAll("details").forEach((detail) => {
+            detail.addEventListener("click", function () {
+                document.querySelectorAll("details").forEach((otherDetail) => {
+                    if (otherDetail !== detail) {
+                        otherDetail.removeAttribute("open");
+                    }
+                });
+            });
+        });
     </script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
