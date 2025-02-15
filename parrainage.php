@@ -1,3 +1,45 @@
+<?php
+session_start();
+include('includes/config.php');
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $_SESSION['error'] = "L'adresse e-mail fournie est invalide. Veuillez entrer une adresse correcte.";
+    } else {
+        $submission_date = date("Y-m-d");
+        $status = 'pending';
+        
+        // Check if the email already exists securely
+        $check_stmt = $conn->prepare("SELECT email FROM affiliates WHERE email = ?");
+        $check_stmt->bind_param("s", $email);
+        $check_stmt->execute();
+        $check_stmt->store_result();
+        
+        if ($check_stmt->num_rows > 0) {
+            $_SESSION['error'] = "Cette adresse e-mail est déjà enregistrée dans notre système.";
+        } else {
+            $stmt = $conn->prepare("INSERT INTO affiliates (email, submission_date, status) VALUES (?, ?, ?)");
+            $stmt->bind_param("sss", $email, $submission_date, $status);
+            
+            if ($stmt->execute()) {
+                $_SESSION['success'] = "Félicitations ! Votre inscription a été enregistrée avec succès. Vous recevrez toutes les informations nécessaires dans un délai de 2 à 5 jours ouvrables pour commencer à générer des revenus avec nous en tant qu'affilié. Merci de votre confiance !";
+            } else {
+                $_SESSION['error'] = "Une erreur s'est produite lors de l'inscription. Veuillez réessayer plus tard.";
+            }
+            
+            $stmt->close();
+        }
+        
+        $check_stmt->close();
+        $conn->close();
+    }
+    header("Location: parrainage.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,7 +61,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body class="bg-gray-800 text-gray-100">
     <header class="bg-gray-900 p-5">
@@ -51,6 +92,19 @@
                     <span class="text-green-400 font-semibold">services handyman</span> pour une solution clé en main qui révolutionne votre quotidien.
                 </p>                       
             </div>
+
+            <section class="p-4 bg-yellow-500 bg-opacity-30 text-white-900 text-center rounded-lg shadow-md border-2 border-yellow-500">
+                <h2 class="text-lg font-bold mb-2"><i class="fas fa-shield-alt text-white-600"></i> Paiements sécurisés avec QuickFix Brothers <i class="fas fa-shield-alt text-white-600"></i></h2>
+                <p class="text-md">
+                    Pour votre sécurité, <strong class="underline">tous les paiements sont effectués exclusivement via notre système officiel.</strong> 
+                    Nous ne collaborons avec aucun intermédiaire exigeant un paiement externe.<br><strong class="underline">Aucun affilié n'est autorisé à encaisser des paiements en notre nom.</strong>
+                    Si vous êtes sollicité pour un paiement externe, veuillez nous en informer immédiatement afin de prévenir toute fraude.
+                    <br>Si vous avez la moindre question, <strong>contactez-nous</strong> au 
+                    <a href="tel:+15145782382" class="underline"><strong>+1 (514) 578-2382</strong></a> 
+                    ou par email à 
+                    <a href="mailto:InstallationServices@outlook.com" class="underline"><strong>InstallationServices@outlook.com</strong></a>.
+                </p>
+            </section><br>
     
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card: Petit Déménagement -->
@@ -193,7 +247,7 @@
         <!-- Formulaire d'inscription -->
         <div class="mt-10">
             <h3 class="text-2xl font-semibold text-white mb-4">Recevez le contrat et les instructions</h3>
-            <form id="affiliate-form" class="flex flex-col justify-center items-center space-y-4 w-full max-w-md mx-auto">
+            <form id="affiliate-form" class="flex flex-col justify-center items-center space-y-4 w-full max-w-md mx-auto" action="parrainage.php" method="POST">
                 <input type="email" id="email" name="email" placeholder="Entrez votre email" 
                     class="w-full p-3 bg-gray-800 text-gray-200 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-400 transition duration-200 ease-in-out">
                 <button type="submit" 
@@ -202,6 +256,15 @@
                 </button>
             </form>
             <p id="confirmation-message" class="text-green-400 mt-4 hidden">Merci ! Nous vous enverrons les détails sous peu.</p>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-gray-900 p-8 rounded-lg shadow-lg text-center border border-gray-700 max-w-md relative">
+                <div id="modal-icon" class="text-6xl mb-4"></div>
+                <p id="modal-message" class="text-white text-lg font-semibold"></p>
+                <button onclick="closeModal()" class="mt-6 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-6 rounded-lg shadow-md transition duration-300 ease-in-out">Fermer</button>
+            </div>
         </div>
 
         <!-- FAQ Dynamique -->
@@ -322,31 +385,30 @@
     </div>
 </section>
 
-<script>
-    document.querySelectorAll("details").forEach((detail) => {
-        detail.addEventListener("click", function () {
-            document.querySelectorAll("details").forEach((otherDetail) => {
-                if (otherDetail !== detail) {
-                    otherDetail.removeAttribute("open");
-                }
-            });
-        });
-    });
-
-
-    document.getElementById("affiliate-form").addEventListener("submit", function(event) {
-        event.preventDefault();
-        var emailInput = document.getElementById("email");
-        var confirmationMessage = document.getElementById("confirmation-message");
-
-        if (emailInput.value.trim() === "") {
-            alert("Veuillez entrer un email valide.");
-        } else {
-            confirmationMessage.classList.remove("hidden");
-            emailInput.value = ""; // Réinitialise le champ après soumission
+    <script>
+        function closeModal() {
+            document.getElementById("modal").classList.add("hidden");
         }
-    });
-</script>
+
+        window.onload = function() {
+            let modal = document.getElementById("modal");
+            let modalMessage = document.getElementById("modal-message");
+            let modalIcon = document.getElementById("modal-icon");
+            
+            <?php if (isset($_SESSION['success'])): ?>
+                modalMessage.innerText = "<?php echo $_SESSION['success']; unset($_SESSION['success']); ?>";
+                modalIcon.innerHTML = "<i class='fas fa-check-circle text-green-400'></i>";
+                modal.classList.remove("hidden");
+            <?php endif; ?>
+            
+            <?php if (isset($_SESSION['error'])): ?>
+                modalMessage.innerText = "<?php echo $_SESSION['error']; unset($_SESSION['error']); ?>";
+                modalIcon.innerHTML = "<i class='fas fa-times-circle text-red-400'></i>";
+                modal.classList.remove("hidden");
+            <?php endif; ?>
+        };
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 
     <footer class="bg-gray-900 p-8 text-white">

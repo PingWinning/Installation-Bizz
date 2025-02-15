@@ -147,8 +147,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-6 w-full md:w-auto mt-4 md:mt-0">
             <!-- Referral Program Link -->
             <div id="parrainage" class="w-full md:w-auto text-center">
-                <a href="parrainage.html" class="font-bold text-white bg-green-700 hover:bg-green-400 px-6 py-2 text-sm md:text-base rounded-md font-medium transition-all block w-full md:w-auto">
-                    <strong>Parrainez et Gagnez 200$</strong>
+                <a href="parrainage.php" class="font-bold text-white bg-green-700 hover:bg-green-400 px-6 py-2 text-sm md:text-base rounded-3xl font-medium transition-all block w-full md:w-auto">
+                    <strong>Parrainez & Gagnez 200$</strong>
                 </a>
             </div>
 
@@ -165,6 +165,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </nav>
+
+    <section id="warrning-fr" class="mt-3 p-4 bg-yellow-500 bg-opacity-30 text-white text-center rounded-lg shadow-md border-2 border-yellow-500">
+        <h2 class="text-lg font-bold mb-2"><i class="fas fa-shield-alt text-white"></i> Paiements sécurisés avec QuickFix Brothers <i class="fas fa-shield-alt text-white-600"></i></h2>
+        <p class="text-md">
+            Pour votre sécurité, <strong class="underline">tous les paiements sont effectués exclusivement via notre système officiel.</strong> 
+            Nous ne collaborons avec aucun intermédiaire exigeant un paiement externe.<br><strong class="underline">Aucun affilié n'est autorisé à encaisser des paiements en notre nom.</strong>
+            Si vous êtes sollicité pour un paiement externe, veuillez nous en informer immédiatement afin de prévenir toute fraude.
+            <br>Si vous avez la moindre question, <strong>contactez-nous</strong> au 
+            <a href="tel:+15145782382" class="underline"><strong>+1 (514) 578-2382</strong></a> 
+            ou par email à 
+            <a href="mailto:InstallationServices@outlook.com" class="underline"><strong>InstallationServices@outlook.com</strong></a>.
+        </p>
+    </section>
+
+    <section id="warrning-en" class="mt-3 p-4 bg-yellow-500 bg-opacity-30 text-white text-center rounded-lg shadow-md border-2 border-yellow-500 hidden">
+        <h2 class="text-lg font-bold mb-2"><i class="fas fa-shield-alt text-white"></i> Secure Payments with QuickFix Brothers <i class="fas fa-shield-alt text-white-600"></i></h2>
+        <p class="text-md">
+            For your security, <strong class="underline">all payments are processed exclusively through our official system.</strong>  
+            We do not collaborate with any intermediaries requesting external payments.<br>
+            <strong class="underline">No affiliate is authorized to collect payments on our behalf.</strong>  
+            If you are asked to make an external payment, please inform us immediately to help prevent fraud.
+            <br>If you have any questions, <strong>contact us</strong> at  
+            <a href="tel:+15145782382" class="underline"><strong>+1 (514) 578-2382</strong></a>  
+            or by email at  
+            <a href="mailto:InstallationServices@outlook.com" class="underline"><strong>InstallationServices@outlook.com</strong></a>.
+        </p>
+    </section>
+
 
     <!-- Services Section -->
     <section class="p-6">

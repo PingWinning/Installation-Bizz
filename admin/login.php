@@ -118,7 +118,7 @@ $conn->close();
             <?php endif; ?>
             <?php
                 if (isset($_GET['session_expired']) && $_GET['session_expired'] == 1) {
-                    echo "<p style='color: red; text-align: center;'>Your session has expired due to inactivity. Please login again.</p>";
+                    echo "<p style='color: red; text-align: center;'>Your session has expired. Please login again.</p>";
                 }
             ?>
             
@@ -142,7 +142,7 @@ $conn->close();
             <!-- Login Button -->
             <div class="mb-4">
                 <button type="submit"
-                    class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-semibold transition-all duration-300 shadow-md">
+                    class="w-full bg-blue-600 hover:bg-blue-500 text-white py-3 rounded-lg font-semibold transition-all duration-300 shadow-md">
                     Login
                 </button>
             </div>
