@@ -3,6 +3,8 @@ document.getElementById('switch').addEventListener('change', function() {
     const enDescription = document.getElementById('description-en');
     const warnFr = document.getElementById('warrning-fr');
     const warnEn = document.getElementById('warrning-en');
+    const frTemoignages = document.getElementById('temoignages-fr');
+    const enTemoignages = document.getElementById('temoignages-en');
 
     if (this.checked) {
         // Switch to English
@@ -10,6 +12,8 @@ document.getElementById('switch').addEventListener('change', function() {
         enDescription.classList.remove('hidden');
         warnFr.classList.add('hidden');
         warnEn.classList.remove('hidden');
+        frTemoignages.classList.add('hidden');
+        enTemoignages.classList.remove('hidden');
         
         document.getElementById('main-title').textContent = "Professional Installation Services";
         document.getElementById('subtitle').textContent = "Your trusted partner for hassle-free setup and installation";
@@ -68,6 +72,8 @@ document.getElementById('switch').addEventListener('change', function() {
         frDescription.classList.remove('hidden');
         warnEn.classList.add('hidden');
         warnFr.classList.remove('hidden');
+        enTemoignages.classList.add('hidden');
+        frTemoignages.classList.remove('hidden');
 
         document.getElementById('main-title').textContent = "Services Professionnels d'Installation";
         document.getElementById('subtitle').textContent = "Votre partenaire de confiance pour une installation sans tracas";
