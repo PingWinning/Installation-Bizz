@@ -1,8 +1,8 @@
 document.getElementById('switch').addEventListener('change', function() {
     const frDescription = document.getElementById('description-fr');
     const enDescription = document.getElementById('description-en');
-    const warnFr = document.getElementById('warrning-fr');
-    const warnEn = document.getElementById('warrning-en');
+    const warnFr = document.getElementById('warning-fr');
+    const warnEn = document.getElementById('warning-en');
     const frTemoignages = document.getElementById('temoignages-fr');
     const enTemoignages = document.getElementById('temoignages-en');
 

@@ -131,7 +131,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap');
 
+        .signature {
+            font-family: 'Dancing Script', cursive;
+            font-weight: 400;
+        }
+    </style>
 </head>
 <body class="bg-gray-900 text-white">
 
@@ -166,32 +173,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </nav>
 
-    <section id="warrning-fr" class="mt-3 p-4 bg-yellow-500 bg-opacity-30 text-white text-center rounded-lg shadow-md border-2 border-yellow-500">
-        <h2 class="text-lg font-bold mb-2"><i class="fas fa-shield-alt text-white"></i> Paiements sécurisés avec QuickFix Brothers <i class="fas fa-shield-alt text-white-600"></i></h2>
-        <p class="text-md">
-            Pour votre sécurité, <strong class="underline">tous les paiements sont effectués exclusivement via notre système officiel.</strong> 
-            Nous ne collaborons avec aucun intermédiaire exigeant un paiement externe.<br><strong class="underline">Aucun affilié n'est autorisé à encaisser des paiements en notre nom.</strong>
-            Si vous êtes sollicité pour un paiement externe, veuillez nous en informer immédiatement afin de prévenir toute fraude.
-            <br>Si vous avez la moindre question, <strong>contactez-nous</strong> au 
-            <a href="tel:+15145782382" class="underline"><strong>+1(514)578-2382</strong></a> 
-            ou par email à 
-            <a href="mailto:InstallationServices@outlook.com" class="underline"><strong>InstallationServices@outlook.com</strong></a>.
-        </p>
-    </section>
+    <section id="warning-fr" class="mt-3 p-4 md:p-6 bg-yellow-500 bg-opacity-30 text-white text-left md:text-center rounded-lg shadow-md border-2 border-yellow-500 max-w-[90%] mx-auto md:max-w-full">
+    <h2 class="text-md md:text-lg font-bold mb-2 flex items-center justify-center gap-2">
+        <i class="fas fa-shield-alt text-white"></i> Paiements sécurisés avec QuickFix Brothers <i class="fas fa-shield-alt text-white-600"></i>
+    </h2>
+    <p class="text-sm md:text-md leading-relaxed">
+        Pour votre sécurité, <strong class="underline">tous les paiements sont effectués exclusivement via notre système officiel.</strong> 
+        Nous ne collaborons avec aucun intermédiaire exigeant un paiement externe.
+        <br><strong class="underline">Aucun affilié n'est autorisé à encaisser des paiements en notre nom.</strong>
+        Si vous êtes sollicité pour un paiement externe, veuillez nous en informer immédiatement afin de prévenir toute fraude.
+        <br>Si vous avez la moindre question, <strong>contactez-nous</strong> au  
+        <a href="tel:+15145782382" class="underline no-break"><strong>+1&nbsp;(514)&nbsp;578-2382</strong></a>  
+        ou par email à  
+        <a href="mailto:InstallationServices@outlook.com" class="underline"><strong>InstallationServices@outlook.com</strong></a>.
+    </p>
+</section>
 
-    <section id="warrning-en" class="mt-3 p-4 bg-yellow-500 bg-opacity-30 text-white text-center rounded-lg shadow-md border-2 border-yellow-500 hidden">
-        <h2 class="text-lg font-bold mb-2"><i class="fas fa-shield-alt text-white"></i> Secure Payments with QuickFix Brothers <i class="fas fa-shield-alt text-white-600"></i></h2>
-        <p class="text-md">
-            For your security, <strong class="underline">all payments are processed exclusively through our official system.</strong>  
-            We do not collaborate with any intermediaries requesting external payments.<br>
-            <strong class="underline">No affiliate is authorized to collect payments on our behalf.</strong>  
-            If you are asked to make an external payment, please inform us immediately to help prevent fraud.
-            <br>If you have any questions, <strong>contact us</strong> at  
-            <a href="tel:+15145782382" class="underline"><strong>+1 (514) 578-2382</strong></a>  
-            or by email at  
-            <a href="mailto:InstallationServices@outlook.com" class="underline"><strong>InstallationServices@outlook.com</strong></a>.
-        </p>
-    </section>
+<section id="warning-en" class="mt-3 p-4 md:p-6 bg-yellow-500 bg-opacity-30 text-white text-left md:text-center rounded-lg shadow-md border-2 border-yellow-500 max-w-[90%] mx-auto md:max-w-full hidden">
+    <h2 class="text-md md:text-lg font-bold mb-2 flex items-center justify-center gap-2">
+        <i class="fas fa-shield-alt text-white"></i> Secure Payments with QuickFix Brothers <i class="fas fa-shield-alt text-white-600"></i>
+    </h2>
+    <p class="text-sm md:text-md leading-relaxed">
+        For your security, <strong class="underline">all payments are processed exclusively through our official system.</strong>  
+        We do not collaborate with any intermediaries requesting external payments.
+        <br><strong class="underline">No affiliate is authorized to collect payments on our behalf.</strong>  
+        If you are asked to make an external payment, please <strong class="underline">inform us immediately</strong> to help prevent fraud.
+        If you have any questions, <strong>contact us</strong> at  
+        <a href="tel:+15145782382" class="underline no-break"><strong>+1&nbsp;(514)&nbsp;578-2382</strong></a>  
+        or by email at  
+        <a href="mailto:InstallationServices@outlook.com" class="underline"><strong>InstallationServices@outlook.com</strong></a>.
+    </p>
+</section>
+
+<style>
+  .no-break {
+      white-space: nowrap; /* Prevents breaking */
+  }
+</style>
 
 
     <!-- Services Section -->
@@ -408,15 +426,148 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
 
+        <!-- Business Metrics Section -->
+        <div class="mt-16 p-8 min-h-[350px] flex flex-col items-center justify-center font-sans rounded-lg shadow-lg">
+            <h2 class="text-yellow-500 text-5xl font-extrabold uppercase tracking-wide text-center mb-6">
+                EXÉCUTION PARFAITE. PRÉCISION INÉGALÉE. EFFICACITÉ PROUVÉE.
+            </h2>
+            <p class="text-gray-300 text-lg text-center max-w-3xl mb-12">
+                Nous avons appris là où la <em>vitesse</em> et la <em>précision</em> ne sont pas des choix,  
+                mais des nécessités.  
+                <strong class="text-yellow-400">Des milliers de commandes traitées, des centaines d’installations réalisées.</strong>  
+
+                Dans les coulisses des entrepôts, nous avons monté, démonté, préparé et déplacé  
+                des électroménagers, des meubles, des équipements lourds. 
+                Chaque laveuse, chaque frigo, chaque canapé était une mission d’<em>efficacité absolue</em>.  
+
+                <strong class="text-yellow-400">Nous avons perfectionné notre rigueur, notre rapidité et notre souci du détail</strong>  
+                pour répondre aux exigences d’un environnement où <em>chaque seconde compte</em>.  
+
+                Aujourd’hui, cette discipline devient <strong class="text-yellow-400">la clé du succès de vos projets</strong>.  
+                Nous ne livrons pas qu’un service,<strong class="text-yellow-400"> nous livrons une expertise forgée par l’expérience.</strong>
+            </p>
+
+
+            <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-6 max-lg:gap-12">
+                
+                <!-- Commandes Livrées -->
+                <div class="text-center">
+                    <h3 class="text-white text-4xl font-extrabold">
+                        <span class="counter" data-target="1872" data-final="1.8"></span><span class="text-yellow-500">K</span>
+                    </h3>
+                    <p class="text-base font-bold mt-4">Commandes Livrées</p>
+                    <p class="text-sm text-gray-400 mt-2">Chaque commande traitée avec efficacité et soin.</p>
+                </div>
+
+                <!-- Projets Accomplis -->
+                <div class="text-center">
+                    <h3 class="text-white text-4xl font-extrabold">
+                        <span class="counter" data-target="1872" data-final="1.8"></span><span class="text-yellow-500">K</span>+
+                    </h3>
+                    <p class="text-base font-bold mt-4">Projets Accomplis</p>
+                    <p class="text-sm text-gray-400 mt-2">Montages et assemblages réalisés avec rigueur.</p>
+                </div>
+
+                <!-- Taux de Satisfaction -->
+                <div class="text-center">
+                    <h3 class="text-white text-4xl font-extrabold">
+                        <span class="counter" data-target="95"></span><span class="text-yellow-500">%</span>
+                    </h3>
+                    <p class="text-base font-bold mt-4">Taux de Satisfaction</p>
+                    <p class="text-sm text-gray-400 mt-2">Nos clients apprécient notre professionnalisme.</p>
+                </div>
+
+                <!-- Intervention Rapide -->
+                <div class="text-center">
+                    <h3 class="text-white text-4xl font-extrabold">
+                        <span class="counter" data-target="24"></span><span class="text-yellow-500">H</span>
+                    </h3>
+                    <p class="text-base font-bold mt-4">Intervention Rapide</p>
+                    <p class="text-sm text-gray-400 mt-2">Nous intervenons en moins de 24 heures.</p>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const counters = document.querySelectorAll(".counter");
+                
+                const animateCounter = (counter) => {
+                    const target = +counter.getAttribute("data-target");
+                    const finalText = counter.getAttribute("data-final"); // Récupère "1.8" pour affichage final si présent
+                    let count = 0;
+                    const increment = Math.ceil(target / 100);
+                    
+                    const updateCounter = () => {
+                        if (count < target) {
+                            count += increment;
+                            if (count > target) count = target;
+                            counter.innerText = count;
+                            setTimeout(updateCounter, 30);
+                        } else {
+                            // Vérifie si une valeur finale spécifique est définie (ex : "1.8" pour 1800)
+                            if (finalText) {
+                                counter.innerText = finalText;
+                            } else {
+                                counter.innerText = target;
+                            }
+                        }
+                    };
+
+                    updateCounter();
+                };
+
+                const startCounters = () => {
+                    counters.forEach(counter => animateCounter(counter));
+                };
+
+                // Démarrer l'animation lorsque la section est visible à l'écran
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            startCounters();
+                            observer.disconnect(); // Arrête d'observer après la première activation
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                observer.observe(document.querySelector(".counter").parentElement);
+            });
+        </script>
+
         <!-- Why Us Section -->
-        <div class="mt-16 bg-yellow-500 text-gray-900 rounded-lg p-8">
-            <h2 class="text-3xl font-bold text-center mb-6">Notre Histoire, Votre Confiance</h2>
-            <p class="text-lg leading-8 text-center">
-                Imaginez deux frères, un atelier, et une passion pour l’art de l’assemblage. Après des années à travailler pour de grandes entreprises, nous avons décidé de créer une entreprise différente,<strong>une entreprise qui place ses clients au cœur de chaque mission.</strong>
-            </p>
-            <p class="text-lg leading-8 text-center mt-4">
-                Contrairement aux grandes entreprises souvent pressées et débordées, nous prenons le temps de bien faire les choses. Chaque vis que nous serrons et chaque meuble que nous montons sont des symboles de la confiance que vous nous accordez.
-            </p>
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-yellow-500 text-gray-900 p-8 border-l-4 border-r-4 border-gray-800 rounded-lg">
+                <h2 class="text-3xl font-bold text-center mb-6">Notre Histoire, Votre Confiance</h2>
+                <div class="max-w-3xl mx-auto text-lg leading-relaxed">
+                    <p class="text-gray-900 mb-6">
+                        <strong>Chers clients,</strong>
+                    </p>
+
+                    <p class="text-gray-900 mb-6">
+                        Chez <strong>QuickFix Brothers</strong>, chaque projet est bien plus qu’une simple installation.  
+                        C’est un engagement envers la <strong>qualité</strong>, l’<strong>expertise</strong> et votre satisfaction.  
+                        Nous mettons notre <strong>rapidité</strong>, notre <strong>précision</strong> et notre <strong>professionnalisme</strong>  
+                        au service de vos besoins.
+                    </p>
+
+                    <p class="text-gray-900 mb-6">
+                        <strong>Chaque vis serrée, chaque meuble monté</strong>  
+                        est le reflet de notre exigence et de la confiance que vous nous accordez.  
+                        Nous savons que votre temps est précieux, et c’est pourquoi nous  
+                        garantissons un service efficace et rigoureux.
+                    </p>
+
+                    <p class="text-gray-900 font-semibold">
+                        Merci de faire confiance à QuickFix Brothers.
+                    </p>
+
+                    <!-- Signature manuscrite -->
+                    <p class="signature text-gray-900 text-right text-2xl mt-8 pr-2">
+                        L’équipe QuickFix Brothers
+                    </p>
+                </div>
+            </div>
         </div>
 
         <!-- Closing Section -->
@@ -468,15 +619,151 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
 
+       <!-- Business Metrics Section -->
+        <div class="mt-16 p-8 min-h-[350px] flex flex-col items-center justify-center font-sans rounded-lg shadow-lg">
+            <h2 class="text-yellow-500 text-5xl font-extrabold uppercase tracking-wide text-center mb-6">
+                FLAWLESS EXECUTION. UNMATCHED PRECISION. PROVEN EFFICIENCY.
+            </h2>
+            <p class="text-gray-300 text-lg text-center max-w-3xl mb-12">
+                We mastered our craft in an environment where <em>speed</em> and <em>precision</em>  
+                are not just choices—they are absolute necessities.  
+                <strong class="text-yellow-400">Thousands of orders processed, hundreds of installations completed.</strong>  
+
+                Behind the scenes in warehouses, we assembled, disassembled, prepared,  
+                and moved appliances, furniture, and heavy equipment.  
+                Every washer, every refrigerator, every sectional sofa was handled with  
+                <em>absolute efficiency</em>.  
+
+                <strong class="text-yellow-400">We have refined our discipline, speed, and attention to detail</strong>  
+                to meet the demands of an environment where <em>every second counts</em>.  
+
+                Today, this discipline is <strong class="text-yellow-400">the key to your project’s success</strong>.  
+                We don’t just deliver a service—<strong class="text-yellow-400">we provide expertise forged through experience.</strong>
+            </p>
+
+            <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-6 max-lg:gap-12">
+                
+                <!-- Orders Delivered -->
+                <div class="text-center">
+                    <h3 class="text-white text-4xl font-extrabold">
+                        <span class="counter" data-target="1872" data-final="1.8"></span><span class="text-yellow-500">K</span>
+                    </h3>
+                    <p class="text-base font-bold mt-4">Orders Delivered</p>
+                    <p class="text-sm text-gray-400 mt-2">Every order handled with efficiency and care.</p>
+                </div>
+
+                <!-- Projects Completed -->
+                <div class="text-center">
+                    <h3 class="text-white text-4xl font-extrabold">
+                        <span class="counter" data-target="1872" data-final="1.8"></span><span class="text-yellow-500">K</span>+
+                    </h3>
+                    <p class="text-base font-bold mt-4">Projects Completed</p>
+                    <p class="text-sm text-gray-400 mt-2">Assemblies and installations completed with precision.</p>
+                </div>
+
+                <!-- Customer Satisfaction -->
+                <div class="text-center">
+                    <h3 class="text-white text-4xl font-extrabold">
+                        <span class="counter" data-target="95"></span><span class="text-yellow-500">%</span>
+                    </h3>
+                    <p class="text-base font-bold mt-4">Customer Satisfaction</p>
+                    <p class="text-sm text-gray-400 mt-2">Our clients value our professionalism.</p>
+                </div>
+
+                <!-- Quick Response -->
+                <div class="text-center">
+                    <h3 class="text-white text-4xl font-extrabold">
+                        <span class="counter" data-target="24"></span><span class="text-yellow-500">H</span>
+                    </h3>
+                    <p class="text-base font-bold mt-4">Fast Response</p>
+                    <p class="text-sm text-gray-400 mt-2">We respond in less than 24 hours.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll(".counter");
+            let hasAnimated = false; // Prevent multiple executions
+
+            const animateCounter = (counter) => {
+                const target = +counter.getAttribute("data-target");
+                const finalText = counter.getAttribute("data-final"); // Gets "1.8" for final display if present
+                let count = 0;
+                const increment = Math.ceil(target / 100);
+
+                const updateCounter = () => {
+                    if (count < target) {
+                        count += increment;
+                        if (count > target) count = target;
+                        counter.innerText = count;
+                        setTimeout(updateCounter, 20);
+                    } else {
+                        if (finalText) {
+                            counter.innerText = finalText;
+                        } else {
+                            counter.innerText = target;
+                        }
+                    }
+                };
+
+                updateCounter();
+            };
+
+            const startCounters = () => {
+                if (!hasAnimated) {
+                    counters.forEach(counter => animateCounter(counter));
+                    hasAnimated = true;
+                }
+            };
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        startCounters();
+                        observer.disconnect();
+                    }
+                });
+            }, { threshold: 0.8 });
+
+            counters.forEach(counter => observer.observe(counter.parentElement));
+        });
+        </script>
+
         <!-- Why Us Section -->
-        <div class="mt-16 bg-yellow-500 text-gray-900 rounded-lg p-8">
-            <h2 class="text-3xl font-bold text-center mb-6">Our Story, Your Trust</h2>
-            <p class="text-lg leading-8 text-center">
-                Imagine two brothers, a workshop, and an unwavering passion for the art of assembly. After years of working for large companies, we decided to create something different—an <strong>enterprise that puts its clients at the heart of every mission.</strong>
-            </p>
-            <p class="text-lg leading-8 text-center mt-4">
-                Unlike large corporations that are often rushed and overwhelmed, we take the time to do things right. Every screw we tighten and every piece of furniture we assemble symbolizes the trust you place in us.
-            </p>
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-yellow-500 text-gray-900 p-8 border-l-4 border-r-4 border-gray-800 rounded-lg">
+                <h2 class="text-3xl font-bold text-center mb-6">Our Story, Your Trust</h2>
+                <div class="max-w-3xl mx-auto text-lg leading-relaxed">
+                    <p class="text-gray-900 mb-6">
+                        <strong>Dear Customers,</strong>
+                    </p>
+
+                    <p class="text-gray-900 mb-6">
+                        At <strong>QuickFix Brothers</strong>, every project is more than just an installation.  
+                        It’s a commitment to <strong>quality</strong>, <strong>expertise</strong>, and your satisfaction.  
+                        We bring our <strong>speed</strong>, <strong>precision</strong>, and <strong>professionalism</strong>  
+                        to meet your needs.
+                    </p>
+
+                    <p class="text-gray-900 mb-6">
+                        <strong>Every screw tightened, every piece of furniture assembled</strong>  
+                        is a reflection of our high standards and the trust you place in us.  
+                        We understand that your time is valuable, which is why we  
+                        guarantee an efficient and meticulous service.
+                    </p>
+
+                    <p class="text-gray-900 font-semibold">
+                        Thank you for trusting QuickFix Brothers.
+                    </p>
+
+                    <!-- Handwritten-style signature -->
+                    <p class="signature text-gray-900 text-right text-2xl mt-8 pr-2">
+                        The QuickFix Brothers Team
+                    </p>
+                </div>
+            </div>
         </div>
 
         <!-- Closing Section -->
