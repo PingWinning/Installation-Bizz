@@ -12,15 +12,13 @@ document.getElementById('switch').addEventListener('change', function() {
         enDescription.classList.remove('hidden');
         warnFr.classList.add('hidden');
         warnEn.classList.remove('hidden');
-        frTemoignages.classList.add('hidden');
-        enTemoignages.classList.remove('hidden');
         
         document.getElementById('main-title').textContent = "Professional Installation Services";
         document.getElementById('subtitle').textContent = "Your trusted partner for hassle-free setup and installation";
         document.getElementById('services-title').innerHTML = '<i class="fas fa-tools"></i>&nbsp;Our Services';
         document.getElementById('contact-title').textContent = "Contact Us";
         document.getElementById('termes').innerHTML = 'By clicking "Send," you agree to our <a href="terms-and-conditions.html" class="text-blue-500 hover:underline">terms and conditions</a>.';
-        document.getElementById('parrainage').innerHTML = '<a href="parrainage.php" class="font-bold text-white bg-green-700 hover:bg-green-400 px-6 py-2 text-sm md:text-base rounded-3xl font-medium transition-all block w-full md:w-auto"><strong>Refer & Earn $200</strong></a>';
+        document.getElementById('parrainage').innerHTML = '<a href="affiliate.php" class="font-bold text-white bg-green-700 hover:bg-green-400 px-6 py-2 text-sm md:text-base rounded-3xl font-medium transition-all block w-full md:w-auto"><strong>Refer & Earn $200</strong></a>';
 
         // Update service titles and descriptions with icons
         document.getElementById('service-1-title').innerHTML = '<i class="fas fa-couch"></i>&nbsp;Furniture/Patio Assembly';
@@ -72,8 +70,6 @@ document.getElementById('switch').addEventListener('change', function() {
         frDescription.classList.remove('hidden');
         warnEn.classList.add('hidden');
         warnFr.classList.remove('hidden');
-        enTemoignages.classList.add('hidden');
-        frTemoignages.classList.remove('hidden');
 
         document.getElementById('main-title').textContent = "Services Professionnels d'Installation";
         document.getElementById('subtitle').textContent = "Votre partenaire de confiance pour une installation sans tracas";

@@ -112,7 +112,8 @@ $totalPages = ceil($totalTickets / $usersPerPage);
             <ul class="flex space-x-6 text-white">
                 <li><a href="index.php" class="hover:text-blue-400">Home</a></li>
                 <li><a href="schedule.php" class="hover:text-blue-400">Schedule</a></li>
-                <li><a href="bookings.php" class="hover:text-blue-400">Bookings</a></li>
+                <li><a href="#" class="hover:text-blue-400">Bookings</a></li>
+                <li><a href="affiliates.php" class="hover:text-blue-400">Affiliates</a></li>
             </ul>
             <button onclick="logout()" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
                 Logout
