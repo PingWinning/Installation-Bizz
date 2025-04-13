@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Validate required fields
     if (empty($fname) || empty($lname) || empty($email)) {
-        $_SESSION['errorMessage'] = "Veuillez remplir tous les champs obligatoires.";
+        $_SESSION['errorMessage'] = "Please fill in all required fields.";
     } else {
         // Check if email already exists
         $stmt = $conn->prepare("SELECT id FROM affiliates WHERE email = ?");
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->store_result();
 
         if ($stmt->num_rows > 0) {
-            $_SESSION['errorMessage'] = "Cet e-mail est déjà enregistré.";
+            $_SESSION['errorMessage'] = "This email is already registered.";
         } else {
             $stmt->close();
 
@@ -59,9 +59,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt = $conn->prepare("INSERT INTO affiliates (first_name, last_name, email, phone) VALUES (?, ?, ?, ?)");
             $stmt->bind_param("ssss", $fname, $lname, $email, $phone);
             if ($stmt->execute()) {
-                $_SESSION['successMessage'] = "Merci d’avoir rejoint le programme de parrainage !";
+                $_SESSION['successMessage'] = "Thank you for joining the affiliate program!";
             } else {
-                $_SESSION['errorMessage'] = "Une erreur s’est produite. Veuillez réessayer.";
+                $_SESSION['errorMessage'] = "An error occurred. Please try again.";
             }
         }
         $stmt->close();
@@ -97,11 +97,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Navigation Links -->
         <ul id="menu"
             class="hidden md:flex space-x-6 absolute md:static top-16 left-0 w-full md:w-auto bg-gray-800 md:bg-transparent md:flex-row flex-col md:items-center text-center md:text-left shadow-md md:shadow-none">
-            <li><a href="index.php" class="block text-gray-300 hover:text-green-400 py-2 md:py-0 ml-8">Accueil</a></li>
-            <li><a href="#AffiliateProgram" class="block text-gray-300 hover:text-green-400 py-2 md:py-0">Programme
-                    d’affiliation</a></li>
-            <li><a href="#HowItWorks" class="block text-gray-300 hover:text-green-400 py-2 md:py-0">Comment ça
-                    marche</a></li>
+            <li><a href="index.php" class="block text-gray-300 hover:text-green-400 py-2 md:py-0 ml-8">Home</a></li>
+            <li><a href="#AffiliateProgram" class="block text-gray-300 hover:text-green-400 py-2 md:py-0">Affiliate
+                    Program</a></li>
+            <li><a href="#HowItWorks" class="block text-gray-300 hover:text-green-400 py-2 md:py-0">How It Works</a>
+            </li>
             <li><a href="#contactus" class="block text-gray-300 hover:text-green-400 py-2 md:py-0">Contact</a></li>
         </ul>
     </nav>
@@ -109,13 +109,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- Title & Inspirational Section -->
     <section class="text-center mt-6 sm:mt-8 px-4" id="AffiliateProgram">
         <h1 class="text-3xl sm:text-5xl font-extrabold text-green-400">
-            Les charges sont lourdes. Mais ensemble, on les soulève avec légèreté.
+            Heavy Lifting? We Make It Light Work.
         </h1>
         <p class="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto mt-4 px-2">
-            Rejoignez le <span class='text-green-400 font-semibold'>programme d’affiliation QuickFix Brothers</span>
-            et <span class='text-green-400 font-semibold'>transformez chaque effort en opportunité.</span>
-            Qu’il s’agisse de meubles, d’installations ou de logistique,
-            on ne fait pas que bouger — <span class='text-green-400 font-semibold'>on avance, ensemble.</span>
+            Join the <span class='text-green-400 font-semibold'>QuickFix Brothers Affiliate Program</span> and <span
+                class='text-green-400 font-semibold'>earn while you move.</span> Whether it’s furniture, home
+            installations, or logistics, we help you <span class='text-green-400 font-semibold'>turn hard work into
+                smart money.</span>
         </p>
     </section>
 
@@ -123,16 +123,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 flex flex-col lg:flex-row items-center justify-between">
         <!-- Text & Form Section -->
         <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
-            <h1 class="text-3xl sm:text-5xl font-extrabold text-green-400">On fait bouger l’argent. Gagnons ensemble.
-            </h1>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-green-400">Money Moves. Let’s Win Together.</h1>
             <p class="text-base sm:text-lg text-gray-300">
-                Rejoignez QuickFix Brothers et transformez chaque contact en revenu. Il ne s’agit pas seulement de
-                gagner de l’argent,
-                mais de bâtir une vraie richesse, de créer du succès et de s’élever ensemble.
+                Join QuickFix Brothers and turn every connection into cash. This isn’t just about making money—it’s
+                about creating wealth, building success, and helping each other rise.
             </p>
             <p class="text-md sm:text-lg text-gray-400 italic">
-                Inscrivez-vous dès aujourd’hui et faites partie d’un mouvement où la réussite se partage et où tout le
-                monde y gagne.
+                Sign up today and be part of a movement where success is shared, and everyone wins.
             </p>
 
             <!-- Form -->
@@ -151,12 +148,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                         if (type === 'success') {
                             modalTitle.classList.add("text-green-400");
-                            modalBody.textContent = "Merci pour votre soumission. Un représentant de QuickFix Brothers vous contactera sous peu.";
+                            modalBody.textContent = "Thanks for submitting your information. A QuickFix Brothers representative will contact you shortly.";
                         } else {
                             modalTitle.classList.add("text-red-400");
-                            modalBody.textContent = "Une erreur s’est produite lors de l’envoi. Veuillez vérifier vos informations et réessayer.";
+                            modalBody.textContent = "There was an issue with your submission. Please verify your inputs and try again.";
                         }
-
                     };
                 </script>
             <?php endif; ?>
@@ -175,21 +171,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <form id="affiliateForm" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST"
                 class="bg-gradient-to-b from-gray-900 to-gray-800 shadow-2xl rounded-2xl p-6 sm:p-8 w-full max-w-md mx-auto lg:mx-0 border border-gray-700">
                 <div class="flex flex-col sm:flex-row sm:space-x-4 mb-4">
-                    <input type="text" name="fname" placeholder="Prénom"
+                    <input type="text" name="fname" placeholder="First Name"
                         class="w-full sm:w-1/2 p-3 border border-gray-700 rounded-xl bg-gray-950 text-white focus:outline-none focus:ring-2 focus:ring-green-400">
-                    <input type="text" name="lname" placeholder="Nom"
+                    <input type="text" name="lname" placeholder="Last Name"
                         class="w-full sm:w-1/2 p-3 border border-gray-700 rounded-xl bg-gray-950 text-white focus:outline-none focus:ring-2 focus:ring-green-400 mt-4 sm:mt-0">
                 </div>
-                <input type="email" name="email" placeholder="Adresse e-mail"
+                <input type="email" name="email" placeholder="Email"
                     class="w-full p-3 border border-gray-700 rounded-xl mb-4 bg-gray-950 text-white focus:outline-none focus:ring-2 focus:ring-green-400">
-                <input type="tel" name="phone" placeholder="Téléphone (optionnel)"
+                <input type="tel" name="phone" placeholder="Phone (Optional)"
                     class="w-full p-3 border border-gray-700 rounded-xl mb-4 bg-gray-950 text-white focus:outline-none focus:ring-2 focus:ring-green-400">
                 <button type="submit"
                     class="w-full bg-green-500 text-black font-semibold p-4 rounded-3xl hover:bg-green-600 transition text-lg shadow-lg">
-                    Rejoindre le Mouvement
+                    Join the Movement
                 </button>
             </form>
-
 
             <script>
                 const phoneInput = document.querySelector('input[name="phone"]');
@@ -217,7 +212,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         e.target.value = '';
                         e.target.setCustomValidity('');
                     } else {
-                        e.target.setCustomValidity('Format invalide. Utilisez : +1 (514) 123-1234');
+                        e.target.setCustomValidity('Invalid format. Use: +1 (514) 123-1234');
                         e.target.reportValidity();
                     }
                 });
@@ -238,27 +233,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Text Section -->
         <div class="w-full md:w-1/2 text-center md:text-left">
             <h2 class="text-3xl sm:text-5xl font-extrabold text-green-400 mb-6 leading-tight">
-                Votre&nbsp;Réseau. <br class="hidden sm:block"> Votre&nbsp;Force. <br class="hidden sm:block">
-                Votre&nbsp;Opportunité.
+                Your&nbsp;Network. <br class="hidden sm:block"> Your&nbsp;Power. <br class="hidden sm:block">
+                Your&nbsp;Opportunity.
             </h2>
             <p class="text-lg sm:text-2xl text-gray-300 max-w-lg mx-auto md:mx-0 mb-6 leading-relaxed">
-                Peu importe où vous êtes, vous pouvez bâtir votre richesse. <br class="hidden sm:block">
-                Connectez. Recommandez. Gagnez. C’est aussi simple que ça.
+                No matter where you are, you can build wealth. <br class="hidden sm:block">
+                Connect. Refer. Earn. It’s that simple.
             </p>
             <p class="text-md sm:text-xl text-gray-400 max-w-lg mx-auto md:mx-0 mb-6">
-                Nous accueillons des affiliés du monde entier — votre succès ne dépend pas de votre emplacement.
-                📍🌎<br>
-                Vos recommandations sont principalement liées à des clients de
-                <span class="font-semibold">Montréal, Laval et les environs</span>.<br>
-                Des frais peuvent s’appliquer en dehors de ces zones, mais votre commission reste inchangée.
+                We welcome affiliates worldwide—your success isn’t limited by location. 📍🌎
+                Your referrals connect with clients primarily in
+                <span class="font-semibold">Montreal, Laval, and nearby regions</span>.
+                Services beyond this area may involve additional costs, but your commission remains the same.
             </p>
             <p class="text-md sm:text-xl text-gray-400 max-w-lg mx-auto md:mx-0">
-                Soyez payé à votre façon : <span class="text-green-400 font-semibold">PayPal, Revolut, virement
-                    Interac.</span><br class="hidden sm:block">
-                Pas d’attente. Pas de tracas. Juste des gains réels, où que vous soyez.
+                Get paid your way: <span class="text-green-400 font-semibold">PayPal, Revolut, e-Transfer.</span><br
+                    class="hidden sm:block">
+                No waiting. No hassle. Just real earnings, anywhere in the world.
             </p>
         </div>
-
 
         <!-- Image/Icon Section -->
         <div class="w-full md:w-1/2 flex justify-center">
@@ -272,11 +265,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Text & Inspirational Message Section -->
         <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
             <h1 class="text-4xl sm:text-6xl font-extrabold text-green-400 leading-tight">
-                Gagnez Sans Limite. <br class="hidden sm:block" /> Grandissez à Chaque Connexion.
+                Earn Without Limits. <br class="hidden sm:block" /> Grow With Every Connection.
             </h1>
             <p class="text-lg sm:text-xl text-gray-300 max-w-xl">
-                Chaque client que vous recommandez est une avancée — pour vous, pour eux, pour nous tous.
-                Pas de plafond. Pas de limite. Juste du potentiel.
+                Every client you bring is a step forward — for you, for them, for all of us.
+                No caps. No ceilings. Just potential.
             </p>
             <div class="max-w-md sm:max-w-lg mx-auto">
                 <ul class="space-y-4 text-white text-lg sm:text-xl font-medium">
@@ -284,41 +277,39 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div class="flex items-center">
                             <span class="text-2xl text-gray-400">📦</span>
                             <span class="ml-3">
-                                <span class="text-white font-semibold">120 $</span>
-                                <span class="text-green-400 font-extrabold">Petit Déménagement</span>
+                                <span class="text-white font-semibold">$120</span>
+                                <span class="text-green-400 font-extrabold">Small Move</span>
                             </span>
                         </div>
-                        <span class="text-gray-400 text-sm sm:text-base">(à Montréal / Laval)</span>
+                        <span class="text-gray-400 text-sm sm:text-base">(within&nbsp;Montreal/Laval)</span>
                     </li>
                     <li class="flex items-center justify-between border-b border-gray-700 pb-2">
                         <div class="flex items-center">
                             <span class="text-2xl text-gray-400">🏠</span>
                             <span class="ml-3">
-                                <span class="text-white font-semibold">200 $</span>
-                                <span class="text-green-400 font-extrabold">Déménagement Moyen</span>
+                                <span class="text-white font-semibold">$200</span>
+                                <span class="text-green-400 font-extrabold">Larger Move</span>
                             </span>
                         </div>
-                        <span class="text-gray-400 text-sm sm:text-base">(à Montréal / Laval)</span>
+                        <span class="text-gray-400 text-sm sm:text-base">(within&nbsp;Montreal/Laval)</span>
                     </li>
                     <li class="flex items-center justify-between">
                         <div class="flex items-center">
                             <span class="text-2xl text-gray-400">📍</span>
                             <span class="ml-3">
-                                <span class="text-white font-semibold">250 $</span>
-                                <span class="text-green-400 font-extrabold">Longue Distance</span>
+                                <span class="text-white font-semibold">$250</span>
+                                <span class="text-green-400 font-extrabold">Long Distance Move</span>
                             </span>
                         </div>
-                        <span class="text-gray-400 text-sm sm:text-base">(hors Montréal / Laval)</span>
+                        <span class="text-gray-400 text-sm sm:text-base">(Outside&nbsp;Montreal/Laval)</span>
                     </li>
                 </ul>
             </div>
 
             <p class="text-md sm:text-lg text-gray-400 italic">
-                QuickFix Brothers — Une communauté fondée sur la confiance, animée par la croissance, et portée par
-                vous.
+                QuickFix Brothers — A community built on trust, driven by growth, and powered by you.
             </p>
         </div>
-
 
 
         <!-- iPhone Display Section -->
@@ -326,86 +317,87 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="iphone-frame">
                 <div class="iphone-notch"></div>
                 <div class="balance-container">
-                    <p class="balance-label">Solde actuel</p>
+                    <p class="balance-label">Current Balance</p>
                     <div id="balance" class="balance">$0.00</div>
                 </div>
 
                 <div id="transactions" class="transactions"></div>
 
-                <button class="cta-button">Encaisser!!!</button>
+                <button class="cta-button">Cash out!!!</button>
             </div>
         </div>
     </div>
 
     <section class="max-w-full mx-auto px-6 sm:px-12 py-12">
         <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-center text-green-400 mb-6">
-        Tes efforts. Ton Héritage.
+            Your Hustle. Your Legacy.
         </h2>
         <p class="text-gray-400 text-center max-w-4xl mx-auto mb-12 text-lg sm:text-xl">
-            Ce n’est pas juste un job de plus. C’est ta chance de construire une vraie richesse grâce à tes connexions.
-            Chez QuickFix Brothers, on transforme les efforts en succès. Prêt à réclamer ta part ?
+            This isn’t just another gig. This is your chance to build real wealth through your connections.
+            At QuickFix Brothers, we turn hard work into success. Are you ready to claim your share?
         </p>
 
+        <!-- ✅ Fix: 2 cartes sur tablettes (md:grid-cols-2), 1 carte sur mobile, 4 cartes sur desktop -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            <!-- Carte 1 - Travailles Quand Tu Veux -->
+
+            <!-- Card 1 - Work When You Want -->
             <div
                 class="bg-gray-900 border-2 border-green-400 rounded-xl p-6 sm:p-8 shadow-lg flex flex-col justify-between">
                 <div>
                     <div class="text-green-400 text-4xl sm:text-5xl mb-4">🚀</div>
-                    <h3 class="text-2xl sm:text-3xl font-bold text-white">Travailles Quand Tu Veux</h3>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white">Work When You Want</h3>
                     <p class="text-gray-300 text-base sm:text-lg mt-4 leading-relaxed">
-                        Pas d'horaires. Pas de pression.
-                        Travaille <span class="text-green-400 font-semibold">à temps plein ou partiel</span>, à ton
-                        rythme.
-                        Étudiant, entrepreneur ou salarié, cette opportunité <span
-                            class="text-green-400 font-semibold">s’adapte à toi</span>.
+                        No schedules. No pressure.
+                        Work <span class="text-green-400 font-semibold">part-time or full-time</span>, at your own pace.
+                        Whether you're a student, entrepreneur, or full-time worker,
+                        this opportunity <span class="text-green-400 font-semibold">adapts to you</span>.
                     </p>
                 </div>
             </div>
 
-            <!-- Carte 2 - Revenus Illimités -->
+            <!-- Card 2 - Unlimited Earnings -->
             <div
                 class="bg-gray-900 border-2 border-green-400 rounded-xl p-6 sm:p-8 shadow-lg flex flex-col justify-between">
                 <div>
                     <div class="text-green-400 text-4xl sm:text-5xl mb-4">💰</div>
-                    <h3 class="text-2xl sm:text-3xl font-bold text-white">Revenus Illimités</h3>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white">Unlimited Earnings</h3>
                     <p class="text-gray-300 text-base sm:text-lg mt-4 leading-relaxed">
-                        Plus tu recommandes, plus tu gagnes.
-                        <span class="text-green-400 font-semibold">Aucune limite.</span>
-                        Que ce soit un revenu passif ou un vrai gagne-pain,
-                        <span class="text-green-400 font-semibold">ton effort définit ton succès</span>.
+                        The more you refer, the more you earn.
+                        <span class="text-green-400 font-semibold">No limits.</span>
+                        Whether it's passive income or a full-time gig,
+                        <span class="text-green-400 font-semibold">your effort defines your success</span>.
                     </p>
                 </div>
             </div>
 
-            <!-- Carte 3 - Depuis N'importe Où -->
+            <!-- Card 3 - Work From Anywhere -->
             <div
                 class="bg-gray-900 border-2 border-green-400 rounded-xl p-6 sm:p-8 shadow-lg flex flex-col justify-between">
                 <div>
                     <div class="text-green-400 text-4xl sm:text-5xl mb-4">🌍</div>
-                    <h3 class="text-2xl sm:text-3xl font-bold text-white">Depuis N'importe Où</h3>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white">Work From Anywhere</h3>
                     <p class="text-gray-300 text-base sm:text-lg mt-4 leading-relaxed">
-                        Tes revenus ne dépendent plus d’un bureau.
-                        Travaille depuis chez toi, un café ou même en voyage.
-                        <span class="text-green-400 font-semibold">Cette opportunité te suit partout.</span>
+                        Your income isn’t tied to an office.
+                        Work from home, a café, or even while traveling.
+                        <span class="text-green-400 font-semibold">This opportunity follows you.</span>
                     </p>
                 </div>
             </div>
 
-            <!-- Carte 4 - Paiement Instantané -->
+            <!-- Card 4 - Instant Payments -->
             <div
                 class="bg-gray-900 border-2 border-green-400 rounded-xl p-6 sm:p-8 shadow-lg flex flex-col justify-between">
                 <div>
                     <div class="text-green-400 text-4xl sm:text-5xl mb-4">⚡</div>
-                    <h3 class="text-2xl sm:text-3xl font-bold text-white">Paiement Instantané</h3>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white">Instant Payments</h3>
                     <p class="text-gray-300 text-base sm:text-lg mt-4 leading-relaxed">
-                        Sois payé <span class="text-green-400 font-semibold">sur-le-champ</span>.
-                        Choisis <span class="text-green-400 font-semibold">PayPal, Revolut ou Virement Interac</span>.
-                        Aucun délai. Aucun stress. <span class="text-green-400 font-semibold">Juste du vrai
-                            revenu.</span>
+                        Get paid <span class="text-green-400 font-semibold">instantly</span>.
+                        Choose between <span class="text-green-400 font-semibold">PayPal, Revolut, or e-Transfer</span>.
+                        No waiting. No delays. <span class="text-green-400 font-semibold">Just real earnings.</span>
                     </p>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -477,7 +469,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </script>
     </footer>
 
-    <script src="js/iphoneFr.js"></script>
+    <script src="js/iphone.js"></script>
     <script>
         document.getElementById("menu-btn").addEventListener("click", function () {
             document.getElementById("menu").classList.toggle("hidden");
